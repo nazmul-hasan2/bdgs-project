@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="htmlTag">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon"
+    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu0mOCV5co5fOLrkQAnbjq-ASLxODwIfPAfw&s" type="image/x-icon">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://kit.fontawesome.com/004879db08.js" crossorigin="anonymous"></script>
+  <title>Bangladesh Digital Growth Solutions</title>
+</head>
+
+<body class="bg-white dark:bg-gray-900">
+<!-- Header Section -->
+<header class="md:mx-14 md:py-4 py-2 px-2 relative">
+  <nav class="container mx-auto flex items-center justify-between">
+    <!-- Logo and Branding -->
+    <div class="flex items-center gap-1 md:gap-3">
+      <img src="assets/tickerAI-logo 1.png" alt="bdgs" class="w-10 md:w-fit">
+      <p class="dark:text-white text-[8px] md:text-xs">
+        Bangladesh Digital Growth Solutions <br>
+        Unlocking your Business Potential
+      </p>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden sm:flex items-center gap-4">
+      <ul class="flex">
+        <li><a href="#" class="px-3 py-2 text-sm font-medium md:text-md text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Home</a></li>
+        <li><a href="#" class="text-[#F44335] px-3 py-2 text-sm font-medium md:text-md dark:text-white hover:text-[#F44335] dark:hover:text-orange-500">About
+            Us</a></li>
+        <li><a href="#" class="px-3 py-2 text-sm font-medium md:text-md text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Services</a></li>
+        <li><a href="#" class="px-3 py-2 text-sm font-medium md:text-md text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Resources</a></li>
+      </ul>
+    </div>
+
+
+
+    <!-- Contact, Dark Mode, and IK -->
+    <div class="flex items-center gap-2 md:gap-7">
+      <a href="news.html">
+        <button
+          class="bg-[#5677AC] md:text-base text-xs md:py-3 py-1 md:px-6 px-2 rounded-md text-white font-semibold hover:bg-[#42669e] transition hover:scale-105 hover:translate-y-1">
+          Contact Us
+        </button>
+      </a>
+      <div
+        class="text-[#5677AC] bg-[#5677AC26] md:text-2xl text-lg font-bold size-9 rounded-full flex items-center justify-center hover:scale-105 transition-all cursor-pointer">
+        IK
+      </div>
+      <button id="switch">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6 dark:stroke-white hover:scale-105 transition">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+        </svg>
+      </button>
+
+          <!-- Mobile Menu Toggle -->
+          <button id="mobile-menu-toggle" class="sm:hidden flex items-center z-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              class="w-6 h-6 dark:stroke-white">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 7.5h16.5m-16.5 7.5h16.5" />
+            </svg>
+          </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="hidden fixed top-0 right-0 w-64 h-full bg-white dark:bg-gray-800 shadow-lg z-10 transform translate-x-full transition-transform duration-300">
+      <button id="mobile-menu-close" class="absolute top-4 right-4 text-gray-600 dark:text-gray-300">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <ul id="mobile-menu-items" class="flex flex-col items-start p-6 space-y-4">
+        <li><a href="#"
+            class="block px-4 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 rounded text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Home</a></li>
+        <li><a href="#"
+            class="block px-4 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 rounded text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">About
+            Us</a></li>
+        <li><a href="#"
+            class="block px-4 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 rounded text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Services</a>
+        </li>
+        <li><a href="#"
+            class="block px-4 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 rounded text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Resources</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+
+
+  <!-- Banner section -->
+  <section class="relative flex flex-col items-center md:px-0 px-4 md:py-32 py-20">
+    <!-- Background Video -->
+    <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover -z-10">
+      <source src="https://boostonline.com.au/wp-content/uploads/2022/11/Home-page-header-video-V4.mp4#t=2"
+        type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  
+    <!-- Overlay -->
+    <div
+      class="absolute top-0 left-0 w-full h-full bg-[#2B2B2B] opacity-60 transition-all duration-300 ease-in-out hover:opacity-70">
+    </div>
+  
+    <!-- Main Content -->
+    <h4 class="font-semibold text-md mb-7 z-0">Discover <span class="text-[#F44335] z-0">-</span> Interact
+      <span class="text-[#F44335] z-0">-</span> Engage
+    </h4>
+    
+    <h1 class="md:text-6xl text-5xl font-bold mb-4 leading-normal z-0 text-white dark:text-amber-400">Connecting <span
+        class="text-[#F44335] underline decoration-4 underline-offset-8 z-0">talent</span> to <br> opportunity through <span
+        class="text-[#F44335] underline decoration-4 underline-offset-8 z-0">skills</span></h1>
+    <p class="text-xs md:text-xl text-center mb-8 font-thin z-0 text-white dark:text-gray-400">We forster a skill-focussed environment enabling students
+      to navigate their career with<br> their self-paced learning
+      journey and businesses to gain market-ready talent.</p>
+  
+    <!-- Free Consultation Button -->
+    <a href="#contact"
+      class="mt-6 px-6 py-3 rounded-full bg-green-500 text-white font-semibold text-lg transition-all duration-300 ease-in-out hover:bg-green-600 hover:scale-105 dark:bg-green-700 dark:text-white dark:hover:bg-green-800 dark:hover:scale-105 z-0">
+      Free Consultation
+    </a>
+  </section>
+
+
+<!-- provide section -->
+<section class="bg-[#F5F5F5] dark:bg-[#1F1F1F]">
+  <div class="py-16 px-4 container mx-auto flex flex-col gap-4 md:gap-8 lg:flex-row lg:items-center lg:justify-between">
+    <!-- Title -->
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center lg:text-left mb-8 p-4 dark:text-white">
+      <span class="text-red-500 dark:text-red-400">We</span>, Provide:
+    </h2>
+
+    <!-- Card Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      <!-- Website Design and Development -->
+      <div
+        class="bg-gray-800 dark:bg-gray-900 shadow-lg rounded-lg p-6 md:py-12 lg:py-16 transition-transform duration-300 hover:scale-105 hover:bg-sky-950 dark:hover:bg-sky-800">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100" fill="none"
+          class="mb-4 mx-auto">
+          <circle cx="50" cy="50" r="50" fill="#FFDEE6"></circle>
+          <path
+            d="M78.0006 34.833H22.0006C21.3567 34.833 20.834 35.3545 20.834 35.9996V58.1663C20.834 58.8114 21.3567 59.3329 22.0006 59.3329H78.0006C78.6445 59.3329 79.1672 58.8114 79.1672 58.1663V35.9996C79.1672 35.3545 78.6445 34.833 78.0006 34.833ZM76.834 56.9996H23.1672V37.1662H76.8338V56.9996H76.834Z"
+            fill="#EE2755"></path>
+          <path
+            d="M44.9905 46.8422C44.5355 46.3859 43.7958 46.3859 43.3408 46.8422L38.6742 51.5088C38.218 51.9649 38.218 52.7024 38.6742 53.1585C38.9017 53.386 39.2004 53.5003 39.499 53.5003C39.7978 53.5003 40.0963 53.386 40.3238 53.1585L44.9905 48.4918C45.4467 48.0357 45.4467 47.2984 44.9905 46.8422Z"
+            fill="#EE2755"></path>
+          <path
+            d="M49.6586 51.5089L44.9918 46.8422C44.5368 46.3859 43.7972 46.3859 43.3422 46.8422C42.8859 47.2984 42.8859 48.0357 43.3422 48.4918L48.0088 53.1585C48.2363 53.386 48.535 53.5003 48.8336 53.5003C49.1324 53.5003 49.4309 53.386 49.6584 53.1585C50.1147 52.7024 50.1147 51.965 49.6586 51.5089Z"
+            fill="#EE2755"></path>
+          <path
+            d="M51.9905 44.5092C51.5355 44.0529 50.7958 44.0529 50.3408 44.5092L45.6742 49.1758C45.218 49.6319 45.218 50.3693 45.6742 50.8254C45.9017 51.0529 46.2004 51.1672 46.499 51.1672C46.7978 51.1672 47.0964 51.0529 47.3239 50.8254L51.9905 46.1588C52.4467 45.7026 52.4467 44.9653 51.9905 44.5092Z"
+            fill="#EE2755"></path>
+          <path
+            d="M56.6583 49.1758L51.9917 44.5092C51.5367 44.0529 50.7971 44.0529 50.3421 44.5092C49.886 44.9654 49.886 45.7027 50.3421 46.1588L55.0087 50.8254C55.2362 51.0529 55.5349 51.1672 55.8335 51.1672C56.1323 51.1672 56.4308 51.0529 56.6583 50.8254C57.1144 50.3693 57.1144 49.6319 56.6583 49.1758Z"
+            fill="#EE2755"></path>
+          <path
+            d="M79.75 15H20.25C17.3555 15 15 17.3555 15 20.25V79.75C15 82.6445 17.3555 85 20.25 85H79.75C82.6445 85 85 82.6445 85 79.75V20.25C85 17.3555 82.6445 15 79.75 15ZM82.6666 79.75C82.6666 81.3588 81.3588 82.6666 79.75 82.6666H20.25C18.6423 82.6666 17.3334 81.3588 17.3334 79.75V20.25C17.3334 18.6411 18.6423 17.3334 20.25 17.3334H79.75C81.3577 17.3334 82.6666 18.6412 82.6666 20.25V79.75Z"
+            fill="#EE2755"></path>
+          <path
+            d="M25.4993 19.666H20.8326C20.1887 19.666 19.666 20.1875 19.666 20.8326V25.4994C19.666 26.1446 20.1887 26.666 20.8326 26.666H25.4993C26.1432 26.666 26.6659 26.1446 26.6659 25.4994V20.8328C26.6659 20.1876 26.1432 19.666 25.4993 19.666ZM24.3326 24.3328H21.9993V21.9994H24.3326V24.3328Z"
+            fill="#EE2755"></path>
+          <path
+            d="M34.8332 19.666H30.1666C29.5227 19.666 29 20.1875 29 20.8326V25.4994C29 26.1446 29.5227 26.666 30.1666 26.666H34.8332C35.4772 26.666 35.9999 26.1446 35.9999 25.4994V20.8328C35.9999 20.1876 35.4772 19.666 34.8332 19.666ZM33.6665 24.3328H31.3331V21.9994H33.6665V24.3328Z"
+            fill="#EE2755"></path>
+          <path
+            d="M44.1672 19.666H39.5006C38.8567 19.666 38.334 20.1875 38.334 20.8326V25.4994C38.334 26.1446 38.8567 26.666 39.5006 26.666H44.1672C44.8112 26.666 45.3338 26.1446 45.3338 25.4994V20.8328C45.334 20.1876 44.8113 19.666 44.1672 19.666ZM43.0006 24.3328H40.6672V21.9994H43.0006V24.3328Z"
+            fill="#EE2755"></path>
+          <path
+            d="M61.6398 39.5H59.3602C58.0582 39.5 57 40.5582 57 41.8602V44.1411C57 45.4419 58.0582 46.5 59.3602 46.5H61.6398C62.9418 46.5 64 45.4418 64 44.1398V41.8589C64 40.5582 62.9418 39.5 61.6398 39.5ZM61.6666 44.1411C61.6666 44.1539 61.655 44.1668 61.6398 44.1668L59.3334 44.1411L59.3602 41.8334L61.6666 41.8602V44.1411Z"
+            fill="#EE2755"></path>
+          <path
+            d="M79.75 15H20.25C17.3555 15 15 17.3555 15 20.25V30.1666C15 30.8118 15.5227 31.3332 16.1666 31.3332H83.8332C84.4772 31.3332 84.9999 30.8118 84.9999 30.1666V20.25C85 17.3555 82.6445 15 79.75 15ZM82.6666 29H17.3334V20.25C17.3334 18.6411 18.6423 17.3334 20.25 17.3334H79.75C81.3577 17.3334 82.6666 18.6412 82.6666 20.25V29Z"
+            fill="#EE2755"></path>
+          <path
+            d="M64.0006 62.834H22.0006C21.3567 62.834 20.834 63.3554 20.834 64.0006C20.834 64.6458 21.3567 65.1672 22.0006 65.1672H64.0006C64.6445 65.1672 65.1672 64.6458 65.1672 64.0006C65.1672 63.3554 64.6445 62.834 64.0006 62.834Z"
+            fill="#EE2755"></path>
+          <path
+            d="M77.9993 62.834H69.8326C69.1887 62.834 68.666 63.3554 68.666 64.0006C68.666 64.6458 69.1887 65.1672 69.8326 65.1672H77.9993C78.6432 65.1672 79.1659 64.6458 79.1659 64.0006C79.1659 63.3554 78.6432 62.834 77.9993 62.834Z"
+            fill="#EE2755"></path>
+          <path
+            d="M30.1672 67.5H22.0006C21.3567 67.5 20.834 68.0214 20.834 68.6666C20.834 69.3118 21.3567 69.8332 22.0006 69.8332H30.1672C30.8112 69.8332 31.3338 69.3118 31.3338 68.6666C31.334 68.0214 30.8113 67.5 30.1672 67.5Z"
+            fill="#EE2755"></path>
+          <path
+            d="M64.0006 72.166H22.0006C21.3567 72.166 20.834 72.6875 20.834 73.3326C20.834 73.9778 21.3567 74.4994 22.0006 74.4994H64.0006C64.6445 74.4994 65.1672 73.978 65.1672 73.3328C65.1672 72.6876 64.6445 72.166 64.0006 72.166Z"
+            fill="#EE2755"></path>
+          <path
+            d="M77.9993 72.166H69.8326C69.1887 72.166 68.666 72.6875 68.666 73.3326C68.666 73.9778 69.1887 74.4993 69.8326 74.4993H77.9993C78.6432 74.4993 79.1659 73.9778 79.1659 73.3326C79.1659 72.6875 78.6432 72.166 77.9993 72.166Z"
+            fill="#EE2755"></path>
+          <path
+            d="M78.0006 76.834H36.0006C35.3567 76.834 34.834 77.3554 34.834 78.0006C34.834 78.6458 35.3567 79.1672 36.0006 79.1672H78.0006C78.6445 79.1672 79.1672 78.6458 79.1672 78.0006C79.1672 77.3554 78.6445 76.834 78.0006 76.834Z"
+            fill="#EE2755"></path>
+          <path
+            d="M30.1672 76.834H22.0006C21.3567 76.834 20.834 77.3554 20.834 78.0006C20.834 78.6458 21.3567 79.1672 22.0006 79.1672H30.1672C30.8112 79.1672 31.3338 78.6458 31.3338 78.0006C31.334 77.3554 30.8113 76.834 30.1672 76.834Z"
+            fill="#EE2755"></path>
+        </svg>
+        <h3
+          class="text-lg md:text-xl font-bold mb-4 mt-2 text-white dark:text-white transition-colors duration-300 hover:text-red-400 text-center">
+          Website Design and Development
+        </h3>
+        <a href="/website-design"
+          class="text-sm text-[#DDDDDD] dark:text-[#AAAAAA] font-light transition-colors duration-300 hover:text-gray-300 block text-center">
+          Learn More
+        </a>
+      </div>
+
+      <!-- SEO Optimization -->
+      <div
+        class="bg-gray-800 dark:bg-gray-900 shadow-lg rounded-lg p-6 md:py-12 lg:py-16 transition-transform duration-300 hover:scale-105 hover:bg-sky-950 dark:hover:bg-sky-800">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100" fill="none"
+          class="mb-4 mx-auto">
+          <circle cx="50" cy="50" r="50" fill="#EFE5FF"></circle>
+          <path
+            d="M58.3346 34.1936C51.9016 34.1936 46.668 39.4031 46.668 45.8065C46.668 52.2099 51.9016 57.4195 58.3346 57.4195C64.7677 57.4195 70.0013 52.2099 70.0013 45.8065C70.0013 39.4031 64.7677 34.1936 58.3346 34.1936ZM58.3346 54.7802C53.3636 54.7802 49.3195 50.7547 49.3195 45.8065C49.3195 40.8584 53.3636 36.8329 58.3346 36.8329C63.3057 36.8329 67.3498 40.8584 67.3498 45.8065C67.3498 50.7547 63.3057 54.7802 58.3346 54.7802Z"
+            fill="#7E40E1"></path>
+          <path
+            d="M58.7122 39.9998C58.0427 39.9998 57.5 40.6074 57.5 41.3572C57.5 42.107 58.0427 42.7147 58.7122 42.7147C60.3828 42.7147 61.7423 44.237 61.7423 46.1078C61.7423 46.8575 62.2849 47.4652 62.9545 47.4652C63.624 47.4652 64.1667 46.8575 64.1667 46.1078C64.1667 42.7396 61.72 39.9998 58.7122 39.9998Z"
+            fill="#7E40E1"></path>
+          <path
+            d="M24.3375 21.6692C23.9785 20.9915 23.1259 20.7263 22.4323 21.0768C21.7387 21.4278 21.4676 22.2621 21.8265 22.9404L25.6319 30.129C25.8782 30.5944 26.3763 30.879 26.9086 30.8758C27.4443 30.8677 27.9297 30.5642 28.1616 30.0917L30.4655 25.4012L32.9676 30.129C33.2112 30.588 33.6955 30.8758 34.2234 30.8758H34.2444C34.7806 30.8677 35.2655 30.5642 35.4979 30.0917L39.0283 22.9031C39.3663 22.2151 39.0697 21.3889 38.3662 21.0584C37.6621 20.7279 36.8178 21.0179 36.4798 21.7064L34.1759 26.397L31.6732 21.6692C31.4269 21.2037 30.9299 20.918 30.397 20.9223C29.8608 20.9304 29.3754 21.2339 29.1435 21.7064L26.8402 26.397L24.3375 21.6692Z"
+            fill="#7E40E1"></path>
+          <path
+            d="M32.918 14.2856C33.2471 14.2856 33.5693 14.1524 33.8018 13.9211C34.0347 13.6897 34.168 13.3685 34.168 13.0414C34.168 12.7143 34.0347 12.393 33.8018 12.1616C33.5693 11.9303 33.2471 11.7971 32.918 11.7971C32.5894 11.7971 32.2671 11.9303 32.0347 12.1616C31.8018 12.393 31.668 12.7143 31.668 13.0414C31.668 13.3685 31.8018 13.6897 32.0347 13.9211C32.2671 14.1524 32.5894 14.2856 32.918 14.2856Z"
+            fill="#7E40E1"></path>
+          <path
+            d="M85.0013 34.8499V17.1582C85.0013 14.2023 82.6063 11.7971 79.6628 11.7971H39.0883C38.3516 11.7971 37.7536 12.3971 37.7536 13.1374C37.7536 13.8777 38.3516 14.4777 39.0883 14.4777H79.6628C81.1345 14.4777 82.332 15.6803 82.332 17.1582V34.8499C82.332 36.3279 81.1345 37.5305 79.6628 37.5305H73.2565C73.2179 37.5305 73.1804 37.5331 73.1429 37.5362C71.083 33.8913 67.7532 31.062 63.7613 29.6584L65.7398 25.5219L68.1025 30.105C68.3319 30.5505 68.7891 30.8291 69.2875 30.8291H69.3079C69.8136 30.8212 70.2718 30.527 70.4908 30.0689L73.8237 23.0994C74.1428 22.4324 73.8628 21.6319 73.1986 21.3115C72.5345 20.9906 71.7368 21.2717 71.4177 21.9393L69.2432 26.4868L66.8805 21.9031C66.648 21.4518 66.1793 21.1749 65.6752 21.1796C65.1689 21.1869 64.7112 21.4812 64.4922 21.9393L62.3172 26.4868L59.955 21.9031C59.6161 21.2461 58.8106 20.989 58.1558 21.3293C57.501 21.6696 57.2456 22.478 57.5839 23.1356L60.5379 28.8658C59.723 28.7474 58.8899 28.6846 58.0427 28.6846C56.402 28.6846 54.8135 28.915 53.3079 29.3443L56.2947 23.0994C56.6137 22.4324 56.3338 21.6319 55.669 21.3115C55.0049 20.9906 54.2072 21.2717 53.8887 21.9393L51.7136 26.4868L49.3509 21.9031C49.1184 21.4518 48.6518 21.1749 48.1456 21.1796C47.6399 21.1869 47.1816 21.4812 46.9626 21.9393L44.7881 26.4868L42.4254 21.9031C42.0865 21.2461 41.2816 20.989 40.6268 21.3293C39.972 21.6696 39.716 22.478 40.0548 23.1356L43.6474 30.105C43.8799 30.5563 44.3481 30.8322 44.8528 30.8291C45.3585 30.8212 45.8167 30.527 46.0357 30.0689L48.2107 25.5219L50.5729 30.105C50.6125 30.182 50.661 30.2516 50.7137 30.3181C47.4407 31.8563 44.7214 34.3902 42.9452 37.5305H22.0065C20.5348 37.5305 19.3372 36.3279 19.3372 34.8499V17.1582C19.3372 15.6803 20.5348 14.4777 22.0065 14.4777H27.4775C28.2147 14.4777 28.8121 13.8777 28.8121 13.1374C28.8121 12.3971 28.2147 11.7971 27.4775 11.7971H22.0065C19.063 11.7971 16.668 14.2023 16.668 17.1582V34.8499C16.668 37.8064 19.063 40.211 22.0065 40.211H41.7158C41.0537 42.0539 40.6919 44.0392 40.6919 46.1082C40.6919 55.7158 48.475 63.5319 58.0422 63.5319C61.1859 63.5319 64.1372 62.6879 66.6829 61.2136L77.2755 71.851C78.1576 72.7368 79.3166 73.1798 80.4755 73.1798C81.6345 73.1798 82.7934 72.7368 83.6755 71.851C85.4403 70.0788 85.4403 67.1956 83.6755 65.4234L79.5137 61.244C78.9923 60.7209 78.1472 60.7204 77.6264 61.244C77.1051 61.7675 77.1051 62.6157 77.6264 63.1392L81.7883 67.3192C82.5119 68.0459 82.5119 69.2286 81.7883 69.9558C81.0647 70.6825 79.8869 70.6825 79.1633 69.9558L68.9216 59.6702C72.865 56.4739 75.3925 51.5824 75.3925 46.1082C75.3925 44.0392 75.0306 42.0539 74.3685 40.211H79.6628C82.6068 40.211 85.0013 37.8058 85.0013 34.8499ZM58.0422 60.8513C49.9473 60.8513 43.3612 54.2373 43.3612 46.1082C43.3612 37.9791 49.9473 31.3652 58.0422 31.3652C66.1371 31.3652 72.7232 37.9791 72.7232 46.1082C72.7232 54.2373 66.1376 60.8513 58.0422 60.8513Z"
+            fill="#7E40E1"></path>
+        </svg>
+        <h3
+          class="text-lg md:text-xl font-bold mb-4 mt-2 text-white dark:text-white transition-colors duration-300 hover:text-red-400 text-center">
+          SEO Optimization
+        </h3>
+        <a href="/seo-services"
+          class="text-sm text-[#DDDDDD] dark:text-[#AAAAAA] font-light transition-colors duration-300 hover:text-gray-300 block text-center">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Digital Marketing -->
+      <div
+        class="bg-gray-800 dark:bg-gray-900 shadow-lg rounded-lg p-6 md:py-12 lg:py-16 transition-transform duration-300 hover:scale-105 hover:bg-sky-950 dark:hover:bg-sky-800">
+          <img width="50" height="50"
+            src="https://img.icons8.com/external-basicons-color-edtgraphics/50/external-SMM-marketing-basicons-color-edtgraphics.png"
+            alt="external-SMM-marketing-basicons-color-edtgraphics" class="mb-4 mx-auto"/>
+          
+        <h3
+          class="text-lg md:text-xl font-bold mb-4 mt-2 text-white dark:text-white transition-colors duration-300 hover:text-red-400 text-center">
+          Social Medai Marketing
+        </h3>
+        <a href="/digital-marketing"
+          class="text-sm text-[#DDDDDD] dark:text-[#AAAAAA] font-light transition-colors duration-300 hover:text-gray-300 block text-center">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Team Section -->
+<section class="bg-[#FAFAFA] dark:bg-[#1a202c] py-16">
+  <div class="container mx-auto px-4">
+    <!-- Section Header -->
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <h2 class="md:text-4xl text-2xl font-bold mb-4 md:mb-0 text-center md:text-left text-[#333] dark:text-white">
+        The Creative Team <br>
+        behind <span class="text-red-500">the door</span>
+      </h2>
+      <img src="assets/Arrow_10.png" alt="Arrow pointing to team" class="md:h-36 md:w-40 h-24 w-26 mx-auto md:ml-6">
+    </div>
+
+    <!-- Team Members -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Team Member 1 -->
+      <div
+        class="bg-white dark:bg-[#2d3748] p-6 rounded-lg shadow-lg hover:transform hover:translate-y-[-10px] hover:shadow-2xl transition-all duration-300 ease-in-out">
+        <img class="w-24 h-24 mx-auto rounded-full mb-4 transition-all duration-300 hover:scale-110"
+          src="assets/ashraf img.jpg" alt="Portrait of Ashraf Siddiki">
+        <h3 class="text-lg font-semibold text-center text-[#333] dark:text-white">Ashraf Siddiki</h3>
+        <p class="text-center text-gray-600 dark:text-gray-300">Founder & CEO</p>
+        <div class="flex justify-center mt-4">
+          <a href="#"
+            class="mx-2 text-green-500 hover:text-white hover:bg-green-500 p-2 rounded-full transition duration-300">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <a href="#"
+            class="mx-2 text-green-500 hover:text-white hover:bg-green-500 p-2 rounded-full transition duration-300">
+            <i class="fa-solid fa-envelope-open-text"></i>
+          </a>
+          <a href="#"
+            class="mx-2 text-green-500 hover:text-white hover:bg-green-500 p-2 rounded-full transition duration-300">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div
+        class="bg-white dark:bg-[#2d3748] p-6 rounded-lg shadow-lg hover:transform hover:translate-y-[-10px] hover:shadow-2xl transition-all duration-300 ease-in-out">
+        <img class="w-24 h-24 mx-auto rounded-full mb-4 transition-all duration-300 hover:scale-110"
+          src="assets/nazmul img sq.jpg" alt="Portrait of Nazmul Hasan">
+        <h3 class="text-lg font-semibold text-center text-[#333] dark:text-white">Nazmul Hasan</h3>
+        <p class="text-center text-gray-600 dark:text-gray-300">Co-founder & COO</p>
+        <div class="flex justify-center mt-4">
+          <a href="#"
+            class="mx-2 text-green-500 hover:text-white hover:bg-green-500 p-2 rounded-full transition duration-300">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <a href="#"
+            class="mx-2 text-green-500 hover:text-white hover:bg-green-500 p-2 rounded-full transition duration-300">
+            <i class="fa-solid fa-envelope-open-text"></i>
+          </a>
+          <a href="#"
+            class="mx-2 text-green-500 hover:text-white hover:bg-green-500 p-2 rounded-full transition duration-300">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div
+        class="bg-white dark:bg-[#2d3748] p-6 rounded-lg shadow-lg hover:transform hover:translate-y-[-10px] hover:shadow-2xl transition-all duration-300 ease-in-out">
+        <img class="w-24 h-24 mx-auto rounded-full mb-4 transition-all duration-300 hover:scale-110"
+          src="assets/teamimg4.png" alt="Portrait of Leo Crozier">
+        <h3 class="text-lg font-semibold text-center text-[#333] dark:text-white">Leo Crozier</h3>
+        <p class="text-center text-gray-600 dark:text-gray-300">Corporate Growth Associate</p>
+        <div class="flex justify-center mt-4">
+          <a href="#"
+            class="mx-2 text-green-500 hover:text-white hover:bg-green-500 p-2 rounded-full transition duration-300">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <a href="#"
+            class="mx-2 text-green-500 hover:text-white hover:bg-green-500 p-2 rounded-full transition duration-300">
+            <i class="fa-solid fa-envelope-open-text"></i>
+          </a>
+          <a href="#"
+            class="mx-2 text-green-500 hover:text-white hover:bg-green-500 p-2 rounded-full transition duration-300">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Team Member 4 -->
+      <div
+        class="bg-white dark:bg-[#2d3748] p-6 rounded-lg shadow-lg hover:transform hover:translate-y-[-10px] hover:shadow-2xl transition-all duration-300 ease-in-out">
+        <img class="w-24 h-24 mx-auto rounded-full mb-4 transition-all duration-300 hover:scale-110"
+          src="assets/nh4.jpg" alt="Portrait of Nazmul Hasan">
+        <h3 class="text-lg font-semibold text-center text-[#333] dark:text-white">Nazmul Hasan</h3>
+        <p class="text-center text-gray-600 dark:text-gray-300">Frontend Developer</p>
+        <div class="flex justify-center mt-4">
+          <a href="#"
+            class="mx-2 text-green-500 hover:text-white hover:bg-green-500 p-2 rounded-full transition duration-300">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <a href="#"
+            class="mx-2 text-green-500 hover:text-white hover:bg-green-500 p-2 rounded-full transition duration-300">
+            <i class="fa-solid fa-envelope-open-text"></i>
+          </a>
+          <a href="#"
+            class="mx-2 text-green-500 hover:text-white hover:bg-green-500 p-2 rounded-full transition duration-300">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="bg-white dark:bg-[#1a202c] py-10">
+  <div class="max-w-6xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-5 gap-8">
+    <div class="space-y-2">
+      <img src="/assets/logo.png" alt="Logo" class="h-8 md:h-12">
+      <div class="space-y-2.5">
+        <p
+          class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+          Level39</p>
+        <p
+          class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+          One Canada Square,</p>
+        <p
+          class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+          Canary Wharf,</p>
+        <p
+          class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+          London,</p>
+        <p
+          class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+          E14 5AB</p>
+      </div>
+    </div>
+
+    <div class="space-y-4">
+      <h3
+        class="font-bold text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+        Home</h3>
+      <ul class="space-y-5">
+        <li><a href="#"
+            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Collaborations</a>
+        </li>
+        <li><a href="#"
+            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Statistics</a>
+        </li>
+        <li><a href="#"
+            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">How
+            It Works</a></li>
+      </ul>
+    </div>
+
+    <div class="space-y-4">
+      <h3
+        class="font-bold text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+        About Us</h3>
+      <ul class="space-y-5">
+        <li><a href="#"
+            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Who
+            We Are</a></li>
+        <li><a href="#"
+            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Mission
+            statement</a></li>
+        <li><a href="#"
+            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Our
+            Vision</a></li>
+        <li><a href="#"
+            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">The
+            Team</a></li>
+      </ul>
+    </div>
+
+    <div class="space-y-5">
+      <h3
+        class="font-bold text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+        Upskill</h3>
+      <ul class="space-y-5">
+        <li><a href="#"
+            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">IT
+            Support</a></li>
+        <li><a href="#"
+            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Project
+            Management</a></li>
+        <li><a href="#"
+            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Data
+            Analysts</a></li>
+        <li><a href="#"
+            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">UX
+            Design</a></li>
+      </ul>
+    </div>
+
+    <div class="space-y-5">
+      <h3
+        class="font-bold text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+        Contact Us</h3>
+      <ul class="space-y-5">
+        <li><a href="#"
+            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Your
+            message</a></li>
+        <li><a href="#"
+            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Email</a>
+        </li>
+        <li><a href="#"
+            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Phone
+            number</a></li>
+        <li><a href="#"
+            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Copyright Section -->
+  <div class="pt-4 mt-10 border-t border-gray-300 dark:border-gray-700">
+    <p
+      class="text-gray-500 text-center text-sm dark:text-gray-400 transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+      Copyright © 2022 Creatives For You LTD</p>
+  </div>
+</footer>
+
+
+
+
+
+  <script>
+    const htmlTag = document.getElementById("htmlTag");
+    document.getElementById("switch").addEventListener("click", function () {
+      htmlTag.classList.toggle("dark");
+    });
+  </script>
+
+  <script>
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuItems = document.querySelectorAll('#mobile-menu-items a');
+
+    // Open menu
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenu.classList.add('translate-x-0');
+    });
+
+    // Close menu
+    mobileMenuClose.addEventListener('click', closeMenu);
+
+    // Close menu on clicking a menu item
+    menuItems.forEach(item => {
+      item.addEventListener('click', closeMenu);
+    });
+
+    function closeMenu() {
+      mobileMenu.classList.remove('translate-x-0');
+      mobileMenu.classList.add('translate-x-full');
+      setTimeout(() => {
+        mobileMenu.classList.add('hidden');
+      }, 300); // Match duration with transition
+    }
+  </script>
+
+
+</body>
+
+</html>
