@@ -100,21 +100,7 @@
   </nav>
 </header>
 
-<!-- JavaScript -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const currentPath = window.location.pathname;
-    const navItems = document.querySelectorAll('.nav-item');
 
-    navItems.forEach(item => {
-      if (item.dataset.path === currentPath) {
-        item.classList.add('active');
-      } else {
-        item.classList.remove('active');
-      }
-    });
-  });
-</script>
 
 <style>
   .active {
@@ -672,6 +658,22 @@
         mobileMenu.classList.add('hidden');
       }, 300); // Match duration with transition
     }
+  </script>
+
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const currentPath = window.location.pathname;
+      const navItems = document.querySelectorAll('.nav-item');
+
+      navItems.forEach(item => {
+        if (item.dataset.path === currentPath) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+    });
   </script>
 
 
