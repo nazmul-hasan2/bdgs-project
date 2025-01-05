@@ -4,6 +4,6 @@
 
 @layer utilities{
   .active {
-    @apply text-[#F44335] !important font-bold;
+    @apply color:#F44335 !important;
   }
 }
