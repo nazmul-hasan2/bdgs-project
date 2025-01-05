@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer utilities{
-  .active {
+  .actve {
     @apply color:#F44335 !important;
   }
 }
