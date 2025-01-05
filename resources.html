@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="htmlTag">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon"
+    href="data:image/png;base64,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"
+    type="image/x-icon">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://kit.fontawesome.com/004879db08.js" crossorigin="anonymous"></script>
+  <title>Bangladesh Digital Growth Solutions</title>
+</head>
+
+<body class="bg-white dark:bg-gray-900">
+  <!-- Header Section -->
+  <header class="md:mx-13 md:py-3 py-2 px-2 sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-lg">
+    <nav class="container mx-auto flex items-center justify-between">
+      <!-- Logo and Branding -->
+      <div class="flex items-center gap-1 md:gap-3">
+        <a href="/"><img src="assets/logo.png" alt="bdgs" class="w-10 md:w-fit"></a>
+        <p class="dark:text-white text-[8px] md:text-xs">
+          Bangladesh Digital Growth Solutions <br>
+          Unlocking your Business Potential
+        </p>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden sm:flex items-center gap-4">
+        <ul class="flex">
+          <li><a href="/" data-path="/"
+              class="nav-item px-3 py-2 text-base font-medium md:text-md text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Home</a>
+          </li>
+          <li><a href="/about-us.html" data-path="/about-us.html"
+              class="nav-item px-3 py-2 text-base font-medium md:text-md dark:text-white hover:text-[#F44335] dark:hover:text-orange-500">About
+              Us</a></li>
+          <li><a href="/services.html" data-path="/services.html"
+              class="nav-item px-3 py-2 text-base font-medium md:text-md text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Services</a>
+          </li>
+          <li><a href="/resources.html" data-path="/resources.html"
+              class="nav-item px-3 py-2 text-base font-medium md:text-md text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Resources</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact, Dark Mode -->
+      <div class="flex items-center gap-2 md:gap-7">
+        <a href="#">
+          <button
+            class="bg-[#EA1D22] md:text-base text-xs md:py-2 py-1 md:px-6 px-2 rounded-md text-white font-semibold hover:bg-[#42669e] transition hover:scale-105 hover:translate-y-1">
+            Contact Us
+          </button>
+        </a>
+        <button id="switch" class="relative w-10 h-10 flex items-center justify-center">
+          <svg id="dark-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 absolute transition-transform transform dark:scale-100 scale-0 duration-300 dark:stroke-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 3v2.25m0 13.5V21m8.25-8.25H21M3 12h2.25M5.636 5.636l1.591 1.591M16.773 16.773l1.591 1.591m0-13.182l-1.591 1.591M7.227 16.773l-1.591 1.591M12 8.25A3.75 3.75 0 1 0 15.75 12 3.75 3.75 0 0 0 12 8.25Z" />
+          </svg>
+          <svg id="light-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 absolute transition-transform transform dark:scale-0 scale-100 duration-300">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-toggle" class="sm:hidden flex items-center z-0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 dark:stroke-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 7.5h16.5m-16.5 7.5h16.5" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu"
+        class="hidden fixed top-0 right-0 w-64 h-full bg-white dark:bg-gray-800 shadow-lg z-10 transform translate-x-full transition-transform duration-300">
+        <button id="mobile-menu-close" class="absolute top-4 right-4 text-gray-600 dark:text-gray-300">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <ul id="mobile-menu-items" class="flex flex-col items-start p-6 space-y-4">
+          <li><a href="/" data-path="/"
+              class="nav-item block px-4 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 rounded text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Home</a>
+          </li>
+          <li><a href="/about-us.html" data-path="/about-us.html"
+              class="nav-item block px-4 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 rounded text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">About
+              Us</a></li>
+          <li><a href="/services.html" data-path="/services.html"
+              class="nav-item block px-4 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 rounded text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Services</a>
+          </li>
+          <li><a href="/resources.html" data-path="/resources.html"
+              class="nav-item block px-4 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 rounded text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Resources</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<!-- Main container that will center and constrain content width -->
+<div class="container mx-auto p-8">
+  <!-- Header -->
+  <header class="text-center mb-12">
+    <h1 class="text-4xl font-bold text-indigo-600 dark:text-indigo-400">Resource Library</h1>
+    <p class="text-lg text-gray-700 dark:text-gray-300">Explore top resources to enhance your knowledge and skills.</p>
+  </header>
+
+  <!-- Resource Cards Section -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Resource 1 -->
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+      <div class="flex items-center space-x-4">
+        <!-- Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          class="w-10 h-10 text-teal-500 dark:text-teal-400">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Frontend Masters</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Deep dive into front-end technologies and development.</p>
+        </div>
+      </div>
+      <a href="https://frontendmasters.com"
+        class="mt-4 inline-block text-indigo-600 dark:text-indigo-400 hover:underline">Visit Site</a>
+    </div>
+
+    <!-- Resource 2 -->
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+      <div class="flex items-center space-x-4">
+        <!-- Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          class="w-10 h-10 text-orange-500 dark:text-orange-400">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v12l3-3"></path>
+        </svg>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">CSS Tricks</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400">The most complete resource for CSS techniques and tips.
+          </p>
+        </div>
+      </div>
+      <a href="https://css-tricks.com"
+        class="mt-4 inline-block text-indigo-600 dark:text-indigo-400 hover:underline">Explore Now</a>
+    </div>
+
+    <!-- Resource 3 -->
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+      <div class="flex items-center space-x-4">
+        <!-- Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          class="w-10 h-10 text-blue-500 dark:text-blue-400">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v10l6 4"></path>
+        </svg>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">MDN Web Docs</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400">The Mozilla Developer Network's documentation for web
+            technologies.</p>
+        </div>
+      </div>
+      <a href="https://developer.mozilla.org/en-US/"
+        class="mt-4 inline-block text-indigo-600 dark:text-indigo-400 hover:underline">Start Exploring</a>
+    </div>
+
+    <!-- Resource 4 -->
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+      <div class="flex items-center space-x-4">
+        <!-- Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          class="w-10 h-10 text-green-500 dark:text-green-400">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 3l12 9-12 9"></path>
+        </svg>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Scrimba</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Interactive coding platform for learning web development.
+          </p>
+        </div>
+      </div>
+      <a href="https://scrimba.com" class="mt-4 inline-block text-indigo-600 dark:text-indigo-400 hover:underline">Join
+        Now</a>
+    </div>
+  </section>
+    </div>
+
+
+    <style>
+      .active {
+        color: #F44335 !important;
+        font-weight: bold;
+      }
+    </style>
+    
+    
+    
+    
+    <!-- Footer Section -->
+    <footer class="bg-white dark:bg-[#1F1F1F] py-10">
+      <div class="max-w-6xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div class="space-y-2">
+          <img src="/assets/logo.png" alt="Logo" class="h-8 md:h-12">
+          <div class="space-y-2.5">
+            <p
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+              Level39</p>
+            <p
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+              One Canada Square,</p>
+            <p
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+              Canary Wharf,</p>
+            <p
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+              London,</p>
+            <p
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+              E14 5AB</p>
+          </div>
+        </div>
+    
+        <div class="space-y-4">
+          <h3
+            class="font-bold text-red-600 dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+            Home</h3>
+          <ul class="space-y-5">
+            <li><a href="#"
+                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Collaborations</a>
+            </li>
+            <li><a href="#"
+                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Statistics</a>
+            </li>
+            <li><a href="#"
+                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">How
+                It Works</a></li>
+          </ul>
+        </div>
+    
+        <div class="space-y-4">
+          <h3
+            class="font-bold text-red-600 dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+            About Us</h3>
+          <ul class="space-y-5">
+            <li><a href="#"
+                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Who
+                We Are</a></li>
+            <li><a href="#"
+                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Mission
+                statement</a></li>
+            <li><a href="#"
+                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Our
+                Vision</a></li>
+            <li><a href="#"
+                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">The
+                Team</a></li>
+          </ul>
+        </div>
+    
+        <div class="space-y-5">
+          <h3
+            class="font-bold text-red-600 dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+            Upskill</h3>
+          <ul class="space-y-5">
+            <li><a href="#"
+                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">IT
+                Support</a></li>
+            <li><a href="#"
+                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Project
+                Management</a></li>
+            <li><a href="#"
+                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Data
+                Analysts</a></li>
+            <li><a href="#"
+                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">UX
+                Design</a></li>
+          </ul>
+        </div>
+    
+        <div class="space-y-5">
+          <h3
+            class="font-bold text-red-600 dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+            Contact Us</h3>
+          <ul class="space-y-5">
+            <li><a href="#"
+                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Your
+                message</a></li>
+            <li><a href="#"
+                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Email</a>
+            </li>
+            <li><a href="#"
+                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Phone
+                number</a></li>
+            <li><a href="#"
+                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+      <!-- Copyright Section -->
+      <div class="pt-4 mt-10 border-t border-gray-300 dark:border-gray-700">
+        <p class="text-gray-500 text-center text-sm dark:text-gray-300 transition-all duration-30 ">
+          Copyright &copy;
+          <script>document.write(new Date().getFullYear())</script> <a href="/"><b
+              class="dark:hover:text-blue-400">Bangladesh Digital Growth Solutions.</b></a>
+        </p>
+      </div>
+    </footer>
+    
+    
+    
+    
+    <!-- JavaScript -->
+    <script>
+      const htmlTag = document.getElementById("htmlTag");
+      document.getElementById("switch").addEventListener("click", function () {
+        htmlTag.classList.toggle("dark");
+      });
+    </script>
+    
+    <script>
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const mobileMenuClose = document.getElementById('mobile-menu-close');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuItems = document.querySelectorAll('#mobile-menu-items a');
+
+      // Open menu
+      mobileMenuToggle.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.remove('translate-x-full');
+        mobileMenu.classList.add('translate-x-0');
+      });
+
+      // Close menu
+      mobileMenuClose.addEventListener('click', closeMenu);
+
+      // Close menu on clicking a menu item
+      menuItems.forEach(item => {
+        item.addEventListener('click', closeMenu);
+      });
+
+      function closeMenu() {
+        mobileMenu.classList.remove('translate-x-0');
+        mobileMenu.classList.add('translate-x-full');
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+        }, 300); // Match duration with transition
+      }
+    </script>
+    
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const currentPath = window.location.pathname;
+        const navItems = document.querySelectorAll('.nav-item');
+
+        navItems.forEach(item => {
+          if (item.dataset.path === currentPath) {
+            item.classList.add('active');
+          } else {
+            item.classList.remove('active');
+          }
+        });
+      });
+    </script>
+    
+    
+    </body>
+    
+    </html>
