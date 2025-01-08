@@ -12,6 +12,7 @@ export default defineConfig({
         web: resolve(__dirname, 'web-design-development.html'),
         seo: resolve(__dirname, 'seo.html'),
         smm: resolve(__dirname, 'social-media-marketing.html'),
+        aipr: resolve(__dirname, 'artificial-public-response.html'),
       },
     },
   },
