@@ -12,7 +12,6 @@ export default defineConfig({
         web: resolve(__dirname, 'web-design-development.html'),
         seo: resolve(__dirname, 'seo.html'),
         smm: resolve(__dirname, 'social-media-marketing.html'),
-        main: resolve(__dirname, 'main.js'),
         ms: resolve(__dirname, 'mission-statement.html'),
       },
     },
