@@ -51,3 +51,28 @@
       }
     });
   });
+
+
+    // JavaScript to toggle FAQ answers and icons with one open at a time
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const button = item.querySelector('button');
+      const answer = item.querySelector('.faq-answer');
+      const icon = button.querySelector('i.fa-chevron-down');
+      
+      button.addEventListener('click', () => {
+        // Close all other open FAQs
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            const otherAnswer = otherItem.querySelector('.faq-answer');
+            const otherIcon = otherItem.querySelector('i.fa-chevron-down');
+            otherAnswer.classList.remove('open');
+            otherIcon.classList.remove('rotate-180');
+          }
+        });
+
+        // Toggle the current FAQ
+        answer.classList.toggle('open');
+        icon.classList.toggle('rotate-180');
+      });
+    });
