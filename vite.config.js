@@ -13,6 +13,7 @@ export default defineConfig({
         seo: resolve(__dirname, '/services/seo.html'),
         smm: resolve(__dirname, '/services/social-media-marketing.html'),
         ms: resolve(__dirname, 'mission-statement.html'),
+        mhs: resolve(__dirname, '/services/n.html'),
       },
     },
   },
