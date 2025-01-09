@@ -15,6 +15,9 @@ export default defineConfig({
         smm: resolve(__dirname, 'social-media-marketing.html'),
         ms: resolve(__dirname, 'mission-statement.html'),
       },
+      output: {
+        entryFileNames: 'bundle.[hash].js',
+      },
     },
   },
 });
