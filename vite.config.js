@@ -16,7 +16,7 @@ export default defineConfig({
         ms: resolve(__dirname, 'mission-statement.html'),
       },
       output: {
-        entryFileNames: 'bundle.[hash].js',
+        entryFileNames: 'main.js',
       },
     },
   },
