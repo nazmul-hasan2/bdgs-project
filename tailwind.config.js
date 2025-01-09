@@ -3,9 +3,8 @@ module.exports = {
   darkMode: 'class',
   content: ['*',
            './services/**/*.html',       // Include all HTML files inside the "services" folder
-           './services/css/**/*.css',       // Include all HTML files inside the "services" folder
-          './main.js',
-           ],
+          '*.js',
+          ],
   theme: {
     extend: {},
   },

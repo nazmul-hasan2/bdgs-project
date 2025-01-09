@@ -2,7 +2,6 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: './',
   build: {
     rollupOptions: {
       input: {
@@ -15,11 +14,6 @@ export default defineConfig({
         smm: resolve(__dirname, 'social-media-marketing.html'),
         ms: resolve(__dirname, 'mission-statement.html'),
       },
-      plugins: [
-        concat({
-          input: ['main.js']
-        })
-      ]
     },
   },
 });
