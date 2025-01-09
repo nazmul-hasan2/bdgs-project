@@ -15,9 +15,11 @@ export default defineConfig({
         smm: resolve(__dirname, 'social-media-marketing.html'),
         ms: resolve(__dirname, 'mission-statement.html'),
       },
-      output: {
-        entryFileNames: 'main.js',
-      },
+      plugins: [
+        concat({
+          input: ['main.js']
+        })
+      ]
     },
   },
 });
