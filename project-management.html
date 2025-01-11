@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="htmlTag">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon"
+    href="https://cdn3d.iconscout.com/3d/premium/thumb/performance-3d-icon-download-in-png-blend-fbx-gltf-file-formats--analytics-logo-analysis-speed-chart-data-vol-2-pack-business-icons-5231303.png" type="image/x-icon">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://kit.fontawesome.com/004879db08.js" crossorigin="anonymous"></script>
+  <title>Bangladesh Digital Growth Solutions</title>
+    <style>
+      .faq-answer {
+        display: none;
+        transition: all 0.3s ease;
+      }
+    
+      .faq-answer.open {
+        display: block;
+        padding: 10px;
+      }
+    
+      .faq-item {
+        transition: transform 0.2s ease-in-out;
+      }
+    
+      .faq-item:hover {
+        transform: translateY(-5px);
+      }
+    
+      .faq-item button {
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+      }
+    
+      .faq-item button:hover {
+        color: #50edff;
+        /* Custom blue color */
+        text-shadow: 0 0 10px rgba(80, 237, 255, 0.7);
+        /* Glowing effect */
+      }
+    </style>
+
+</head>
+
+<body class="bg-white dark:bg-gray-900">
+<!-- Header Section -->
+<header class="md:mx-13 md:py-3 py-2 px-2 sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-lg">
+  <nav class="container mx-auto flex items-center justify-between">
+    <!-- Logo and Branding -->
+    <div class="flex items-center gap-1 md:gap-3">
+      <a href="/"><img src="assets/logo.png" alt="bdgs" class="w-10 md:w-fit"></a>
+      <p class="dark:text-white text-[8px] md:text-xs">
+        Bangladesh Digital Growth Solutions <br>
+        Unlocking your Business Potential
+      </p>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden sm:flex items-center gap-4">
+      <ul class="flex">
+        <li><a href="/" data-path="/"
+            class="nav-item px-3 py-2 text-base font-medium md:text-md text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Home</a>
+        </li>
+        <li><a href="/about-us.html" data-path="/about-us.html"
+            class="nav-item px-3 py-2 text-base font-medium  dark:text-white hover:text-[#F44335] dark:hover:text-orange-500">About
+            Us</a></li>
+        <li><a href="/services.html" data-path="/services.html"
+            class="nav-item px-3 py-2 text-base font-medium md:text-md text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Services</a>
+        </li>
+        <li><a href="/resources.html" data-path="/resources.html"
+            class="nav-item px-3 py-2 text-base font-medium md:text-md text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Resources</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contact, Dark Mode -->
+    <div class="flex items-center gap-2 md:gap-7">
+      <a href="#">
+        <button
+          class="bg-[#EA1D22] md:text-base text-xs md:py-2 py-1 md:px-6 px-2 rounded-md text-white font-semibold hover:bg-[#42669e] transition hover:scale-105 hover:translate-y-1">
+          Contact Us
+        </button>
+      </a>
+      <button id="switch" class="relative w-10 h-10 flex items-center justify-center">
+        <svg id="dark-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6 absolute transition-transform transform dark:scale-100 scale-0 duration-300 dark:stroke-white">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 3v2.25m0 13.5V21m8.25-8.25H21M3 12h2.25M5.636 5.636l1.591 1.591M16.773 16.773l1.591 1.591m0-13.182l-1.591 1.591M7.227 16.773l-1.591 1.591M12 8.25A3.75 3.75 0 1 0 15.75 12 3.75 3.75 0 0 0 12 8.25Z" />
+        </svg>
+        <svg id="light-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6 absolute transition-transform transform dark:scale-0 scale-100 duration-300">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+        </svg>
+      </button>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobile-menu-toggle" class="sm:hidden flex items-center z-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6 dark:stroke-white">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 7.5h16.5m-16.5 7.5h16.5" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="hidden fixed top-0 right-0 w-64 h-full bg-white dark:bg-gray-800 shadow-lg z-10 transform translate-x-full transition-transform duration-300">
+      <button id="mobile-menu-close" class="absolute top-4 right-4 text-gray-600 dark:text-gray-300">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <ul id="mobile-menu-items" class="flex flex-col items-start p-6 space-y-4"> 
+        <li><a href="/" data-path="/"
+            class="nav-item block px-4 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 rounded text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Home</a>
+        </li>
+        <li><a href="/about-us.html" data-path="/about-us.html"
+            class="nav-item block px-4 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 rounded text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">About
+            Us</a></li>
+        <li><a href="/services.html" data-path="/services.html"
+            class="nav-item block px-4 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 rounded text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Services</a>
+        </li>
+        <li><a href="/resources.html" data-path="/resources.html"
+            class="nav-item block px-4 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 rounded text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Resources</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  <!-- Header -->
+  <header class="bg-indigo-100 py-16 text-center dark:bg-indigo-800 dark:text-white">
+    <h1 class="text-4xl font-bold text-indigo-800 dark:text-indigo-100">Project Management Dashboard</h1>
+    <p class="mt-4 text-xl text-indigo-700 dark:text-indigo-300">Efficiently manage your digital growth projects with
+      us!</p>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="my-16 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project 1 -->
+      <div
+        class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 dark:bg-gray-800 dark:text-white"
+        id="project-1">
+        <div class="flex justify-between items-center">
+          <h2 class="text-2xl font-semibold text-indigo-800 dark:text-indigo-100">E-commerce Platform</h2>
+          <span class="text-sm bg-blue-200 text-blue-800 rounded-full px-3 py-1" id="status-1">In Progress</span>
+        </div>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">Developing an e-commerce platform for seamless shopping
+          experiences.</p>
+        <div class="mt-4">
+           <div class="flex items-center justify-between">
+            <span class="text-sm text-gray-500 dark:text-gray-400">Current Time:</span>
+            <span class="text-sm font-semibold text-indigo-600" id="current-time-1">Loading...</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-gray-500 dark:text-gray-400 mt-2">Start Date:</span>
+            <span class="text-sm font-semibold text-indigo-600" id="start-date-1">Jan 1, 2025</span>
+          </div>
+          <div class="flex items-center justify-between mt-2">
+            <span class="text-sm text-gray-500 dark:text-gray-400">End Date:</span>
+            <span class="text-sm font-semibold text-indigo-600" id="end-date-1">Feb 25, 2025</span>
+          </div>
+          <div class="flex items-center justify-between mt-2">
+            <span class="text-sm text-gray-500 dark:text-gray-400">Deadline:</span>
+            <span class="text-sm font-semibold text-indigo-600" id="deadline-1">Feb 25, 2025</span>
+          </div>
+          <div class="mt-4">
+            <span class="block text-sm text-gray-500 dark:text-gray-400">Progress:</span>
+            <div class="relative pt-1">
+              <div class="flex mb-2 items-center justify-between">
+                <span
+                  class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-teal-600 bg-teal-200">
+                  <span id="progress-text-1">0%</span>
+                </span>
+              </div>
+              <div class="flex mb-2">
+                <div class="relative flex w-full pt-1">
+                  <div class="flex mb-2 w-full">
+                    <div class="absolute flex align-center justify-center w-full">
+                      <div class="flex mb-2 w-full">
+                        <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+                          <div id="progress-bar-1" class="progress-bar h-2 rounded-full" style="width: 0%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 flex justify-between">
+          <button class="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 focus:outline-none"
+            onclick="viewDetails('E-commerce Platform', 'Developing an e-commerce platform for seamless shopping experiences.', 'Feb 25, 2025')">View
+            Details</button>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div
+        class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 dark:bg-gray-800 dark:text-white"
+        id="project-2">
+        <div class="flex justify-between items-center">
+          <h2 class="text-2xl font-semibold text-indigo-800 dark:text-indigo-100">Mobile App</h2>
+          <span class="text-sm bg-blue-200 text-blue-800 rounded-full px-3 py-1" id="status-2">In Progress</span>
+        </div>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">Developing a mobile app to provide seamless access to digital
+          services.</p>
+        <div class="mt-4">
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-gray-500 dark:text-gray-400">Current Time:</span>
+            <span class="text-sm font-semibold text-indigo-600" id="current-time-2">Loading...</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-gray-500 dark:text-gray-400 mt-2">Start Date:</span>
+            <span class="text-sm font-semibold text-indigo-600" id="start-date-2">Jan 10, 2025</span>
+          </div>
+          <div class="flex items-center justify-between mt-2">
+            <span class="text-sm text-gray-500 dark:text-gray-400">End Date:</span>
+            <span class="text-sm font-semibold text-indigo-600" id="end-date-2">Mar 1, 2025</span>
+          </div>
+          <div class="flex items-center justify-between mt-2">
+            <span class="text-sm text-gray-500 dark:text-gray-400">Deadline:</span>
+            <span class="text-sm font-semibold text-indigo-600" id="deadline-2">Mar 1, 2025</span>
+          </div>
+          <div class="mt-4">
+            <span class="block text-sm text-gray-500 dark:text-gray-400">Progress:</span>
+            <div class="relative pt-1">
+              <div class="flex mb-2 items-center justify-between">
+                <span
+                  class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-teal-600 bg-teal-200">
+                  <span id="progress-text-2">0%</span>
+                </span>
+              </div>
+              <div class="flex mb-2">
+                <div class="relative flex w-full pt-1">
+                  <div class="flex mb-2 w-full">
+                    <div class="absolute flex align-center justify-center w-full">
+                      <div class="flex mb-2 w-full">
+                        <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+                          <div id="progress-bar-2" class="progress-bar h-2 rounded-full" style="width: 0%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 flex justify-between">
+          <button class="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 focus:outline-none"
+            onclick="viewDetails('Mobile App', 'Developing a mobile app to provide seamless access to digital services.', 'Mar 1, 2025')">View
+            Details</button>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div
+        class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 dark:bg-gray-800 dark:text-white"
+        id="project-3">
+        <div class="flex justify-between items-center">
+          <h2 class="text-2xl font-semibold text-indigo-800 dark:text-indigo-100">CRM System</h2>
+          <span class="text-sm bg-blue-200 text-blue-800 rounded-full px-3 py-1" id="status-3">In Progress</span>
+        </div>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">Developing a CRM system for managing customer relationships and
+          data.</p>
+        <div class="mt-4">
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-gray-500 dark:text-gray-400">Current Time:</span>
+            <span class="text-sm font-semibold text-indigo-600" id="current-time-3">Loading...</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-gray-500 dark:text-gray-400 mt-2">Start Date:</span>
+            <span class="text-sm font-semibold text-indigo-600" id="start-date-3">Jan 15, 2025</span>
+          </div>
+          <div class="flex items-center justify-between mt-2">
+            <span class="text-sm text-gray-500 dark:text-gray-400">End Date:</span>
+            <span class="text-sm font-semibold text-indigo-600" id="end-date-3">Apr 15, 2025</span>
+          </div>
+          <div class="flex items-center justify-between mt-2">
+            <span class="text-sm text-gray-500 dark:text-gray-400">Deadline:</span>
+            <span class="text-sm font-semibold text-indigo-600" id="deadline-3">Apr 15, 2025</span>
+          </div>
+          <div class="mt-4">
+            <span class="block text-sm text-gray-500 dark:text-gray-400">Progress:</span>
+            <div class="relative pt-1">
+              <div class="flex mb-2 items-center justify-between">
+                <span
+                  class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-teal-600 bg-teal-200">
+                  <span id="progress-text-3">0%</span>
+                </span>
+              </div>
+              <div class="flex mb-2">
+                <div class="relative flex w-full pt-1">
+                  <div class="flex mb-2 w-full">
+                    <div class="absolute flex align-center justify-center w-full">
+                      <div class="flex mb-2 w-full">
+                        <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+                          <div id="progress-bar-3" class="progress-bar h-2 rounded-full" style="width: 0%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 flex justify-between">
+          <button class="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 focus:outline-none"
+            onclick="viewDetails('CRM System', 'Developing a CRM system for managing customer relationships and data.', 'Apr 15, 2025')">View
+            Details</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for View Details -->
+  <div id="projectModal" class="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-50 hidden">
+    <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full dark:bg-gray-800 dark:text-white">
+      <h2 id="modalTitle" class="text-2xl font-semibold text-indigo-800 dark:text-indigo-100">Project Details</h2>
+      <p id="modalDescription" class="mt-2 text-gray-600 dark:text-gray-300">More information about the project.</p>
+      <p id="modalDeadline" class="mt-2 text-sm text-indigo-600 dark:text-indigo-400">Deadline: </p>
+      <button class="mt-4 bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 focus:outline-none"
+        onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+
+
+  <script>
+    function viewDetails(title, description, deadline) {
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('modalDescription').textContent = description;
+      document.getElementById('modalDeadline').textContent = `Deadline: ${deadline}`;
+      document.getElementById('projectModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('projectModal').classList.add('hidden');
+    }
+
+      // Update digital time for each project
+      function updateCurrentTime(projectId) {
+        const now = new Date();
+        const formattedTime = now.toLocaleString('en-GB', { timeZone: 'Asia/Dhaka', hour12: true });
+        document.getElementById(`current-time-${projectId}`).textContent = formattedTime;
+      }
+
+    function updateStatusAndProgress(projectId, progressBarId, progressTextId, deadlineId) {
+      const deadline = document.getElementById(deadlineId).textContent;
+      const currentTime = new Date();
+      const deadlineTime = new Date(deadline);
+      const timeRemaining = deadlineTime - currentTime;
+      const totalDuration = deadlineTime - new Date("Jan 1, 2025"); // Start Date
+
+      let progressPercentage = Math.max(0, Math.min(100, 100 - (timeRemaining / totalDuration) * 100));
+
+      document.getElementById(progressBarId).style.width = `${progressPercentage}%`;
+      document.getElementById(progressTextId).textContent = `${Math.round(progressPercentage)}%`;
+
+      
+
+      // Update the color based on percentage
+      document.getElementById(progressBarId).className = `progress-bar h-2 rounded-full ${getColorForProgress(progressPercentage)}`;
+
+      let status = 'In Progress';
+      if (progressPercentage >= 100) {
+        status = 'Completed';
+      } else if (progressPercentage >= 75) {
+        status = 'Almost Done';
+      } else if (progressPercentage >= 50) {
+        status = 'Delayed';
+      }
+      document.getElementById(`status-${projectId}`).textContent = status;
+    }
+
+    // Function to return color based on percentage
+    function getColorForProgress(percentage) {
+      if (percentage <= 10) return 'bg-[#FF6B6B]';
+      if (percentage <= 20) return 'bg-[#FF4C4C]';
+      if (percentage <= 30) return 'bg-[#E60000]';
+      if (percentage <= 40) return 'bg-[#FFA500]';
+      if (percentage <= 50) return 'bg-[#FF8C00]';
+      if (percentage <= 60) return 'bg-[#FFD700]';
+      if (percentage <= 70) return 'bg-[#90EE90]';
+      if (percentage <= 80) return 'bg-[#32CD32]';
+      if (percentage <= 90) return 'bg-[#ADD8E6]';
+      return 'bg-[#1E90FF]';
+    }
+
+// update every project id by time
+        setInterval(() => {
+            updateCurrentTime(1);
+            updateCurrentTime(2);
+            updateCurrentTime(3);
+          
+          }, 1000);
+
+// Example usage: Update status and progress for Project 1
+    setInterval(() => updateStatusAndProgress(1, 'progress-bar-1', 'progress-text-1', 'deadline-1'), 1000);
+    setInterval(() => updateStatusAndProgress(2, 'progress-bar-2', 'progress-text-2', 'deadline-2'), 1000);
+    setInterval(() => updateStatusAndProgress(3, 'progress-bar-3', 'progress-text-3', 'deadline-3'), 1000); // New project added
+  </script>
+
+
+
+
+  <!-- Up Arrow Button (Floating) -->
+  <a href="/project-management.html" id="upArrowButton"
+    class="fixed bottom-6 right-6 bg-indigo-600 text-white p-5 rounded-full shadow-lg hover:bg-green-700 hover:scale-110  transform transition-all duration-300 animate__animated animate__fadeIn animate__delay-3s md:p-6 sm:p-4 sm:w-12 sm:h-12 flex items-center justify-center">
+    <!-- Font Awesome Arrow Icon -->
+    <i class="fas fa-arrow-up text-white sm:text-xl md:text-2xl"></i>
+  </a>
+  
+  <!-- Scroll to Top Script -->
+  <script>
+    // Scroll to top functionality
+    const upArrowButton = document.getElementById('upArrowButton');
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 300) {
+        // Show the up arrow when the user scrolls down
+        upArrowButton.classList.remove('hidden');
+      } else {
+        // Hide the up arrow when the user scrolls back to the top
+        upArrowButton.classList.add('hidden');
+      }
+    });
+  </script>
+  
+  <!-- Footer Section -->
+  <footer class="bg-white dark:bg-[#1F1F1F] pt-10 pb-4">
+    <div class="max-w-6xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-5 gap-8">
+      <div class="space-y-2">
+        <a href="/">
+          <img src="/assets/logo.png" alt="Logo" class="h-8 md:h-12"></a>
+        <div class="space-y-2.5">
+          <p
+            class="flex text-sm sm:text-base items-center text-[#20484F] dark:text-white transition duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+            <i class="fas fa-map-marker-alt mr-2"></i> Ward-06, Makimabad
+          </p>
+          <p
+            class="flex text-sm sm:text-base items-center text-[#20484F] dark:text-white transition duration-300 hover:text-blue-600 dark:hover:text-blue-400 ">
+            <i class="fas fa-building mr-2"></i> Model College Road, Hazigonj
+          </p>
+          <p
+            class="flex text-sm sm:text-base items-center text-[#20484F] dark:text-white transition duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+            <i class="fas fa-city mr-2"></i> Chandpur, Bangladesh
+          </p>
+        </div>
+      </div>
+  
+      <div class="space-y-4">
+        <h3
+          class="font-bold text-red-600 dark:text-red-600 transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+          Home</h3>
+        <ul class="space-y-5">
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-handshake mr-2"></i>Collaborations</a>
+          </li>
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-chart-line mr-2"></i>Statistics</a>
+          </li>
+          <li><a href="/how-it-works.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-cogs mr-2"></i>How
+              It Works</a></li>
+        </ul>
+      </div>
+  
+      <div class="space-y-4">
+        <h3
+          class="font-bold text-red-600 dark:text-red-600 transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+          About Us</h3>
+        <ul class="space-y-5">
+          <li><a href="/who-we-are.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-users mr-2"></i>Who
+              We Are</a></li>
+          <li><a href="/mission-statement.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-bullseye mr-2"></i>Mission
+              statement</a></li>
+          <!-- <li><a href="#"
+                  class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                    class="fas fa-lightbulb mr-2"></i>Our
+                  Vision</a></li> -->
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-user-friends mr-2"></i>The
+              Team</a></li>
+        </ul>
+      </div>
+  
+      <div class="space-y-5">
+        <h3
+          class="font-bold text-red-600 dark:text-red-600 transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+          Upskill</h3>
+        <ul class="space-y-5">
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-laptop-code mr-2"></i>IT
+              Support</a></li>
+          <li><a href="/project-management.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-project-diagram mr-2"></i>Project
+              Management</a></li>
+          <li><a href="/data-analysis.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-chart-pie mr-2"></i>Data
+              Analysts</a></li>
+          <!-- <li><a href="#"
+                  class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                    class="fas fa-paint-brush mr-2"></i>UX
+                  Design</a></li> -->
+        </ul>
+      </div>
+  
+      <div class="space-y-5">
+        <h3 class="font-bold text-red-600 dark:text-red-600 transition-all duration-300">
+          Contact Us</h3>
+        <ul class="space-y-5">
+          <li><a href="/contact-us.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-pen mr-2"></i>Your
+              message</a></li>
+          <!-- <li><a href="/contact-us.html"
+                  class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                    class="fas fa-envelope mr-2"></i>Email</a>
+              </li> -->
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-phone mr-2"></i>Phone
+              number</a></li>
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fab fa-linkedin mr-2"></i>LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Copyright Section -->
+    <div class="pt-6 mt-4 items-center border-t md:border-t-[1px] border-gray-50 mx-16"></div>
+    <p class="text-gray-500 text-center text-sm dark:text-gray-300 transition-all duration-30 ">
+      Copyright &copy;
+      <script>document.write(new Date().getFullYear())</script> <a href="/"><b class="dark:hover:text-blue-400">Bangladesh
+          Digital Growth Solutions.</b></a>
+    </p>
+  
+  </footer>
+  
+  
+  
+  <!-- some js -->
+  <script src="main.js"></script>
+  <script>
+    // ***darkmode***
+    const htmlTag = document.getElementById("htmlTag");
+    document.getElementById("switch").addEventListener("click", function () {
+      htmlTag.classList.toggle("dark");
+    });
+
+
+    // ***navmenu/mobilemenu***
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuItems = document.querySelectorAll('#mobile-menu-items a');
+
+    // Open menu
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenu.classList.add('translate-x-0');
+    });
+
+    // Close menu
+    mobileMenuClose.addEventListener('click', closeMenu);
+
+    // Close menu on clicking a menu item
+    menuItems.forEach(item => {
+      item.addEventListener('click', closeMenu);
+    });
+
+    function closeMenu() {
+      mobileMenu.classList.remove('translate-x-0');
+      mobileMenu.classList.add('translate-x-full');
+      setTimeout(() => {
+        mobileMenu.classList.add('hidden');
+      }, 300); // Match duration with transition
+    }
+
+
+    // ***navactivelink***
+    document.addEventListener("DOMContentLoaded", () => {
+      const navItems = document.querySelectorAll(".nav-item");
+
+      // Get the current URL path
+      const currentPath = window.location.pathname;
+
+      // Loop through all nav items and add 'active' class to the matching item
+      navItems.forEach((item) => {
+        if (item.getAttribute("href") === currentPath) {
+          item.classList.add("active");
+        } else {
+          item.classList.remove("active");
+        }
+      });
+    });
+
+    // JavaScript to toggle FAQ answers and icons with one open at a time
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const button = item.querySelector('button');
+      const answer = item.querySelector('.faq-answer');
+      const icon = button.querySelector('i.fa-chevron-down');
+
+      button.addEventListener('click', () => {
+        // Close all other open FAQs
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            const otherAnswer = otherItem.querySelector('.faq-answer');
+            const otherIcon = otherItem.querySelector('i.fa-chevron-down');
+            otherAnswer.classList.remove('open');
+            otherIcon.classList.remove('rotate-180');
+          }
+        });
+
+        // Toggle the current FAQ
+        answer.classList.toggle('open');
+        icon.classList.toggle('rotate-180');
+      });
+    });
+  </script>
+  
+  </body>
+  
+  </html>

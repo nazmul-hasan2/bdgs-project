@@ -290,122 +290,157 @@
 
 
 
-<!-- Footer Section -->
-<footer class="bg-white dark:bg-[#1F1F1F] py-10">
-  <div class="max-w-6xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-5 gap-8">
-    <div class="space-y-2">
-      <img src="/assets/logo.png" alt="Logo" class="h-8 md:h-12">
-      <div class="space-y-2.5">
-        <p
-          class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
-          Level39</p>
-        <p
-          class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
-          One Canada Square,</p>
-        <p
-          class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
-          Canary Wharf,</p>
-        <p
-          class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
-          London,</p>
-        <p
-          class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
-          E14 5AB</p>
+  <!-- Up Arrow Button (Floating) -->
+  <a href="/services/social-media-marketing.html" id="upArrowButton"
+    class="fixed bottom-6 right-6 bg-indigo-600 text-white p-5 rounded-full shadow-lg hover:bg-green-700 hover:scale-110  transform transition-all duration-300 animate__animated animate__fadeIn animate__delay-3s md:p-6 sm:p-4 sm:w-12 sm:h-12 flex items-center justify-center">
+    <!-- Font Awesome Arrow Icon -->
+    <i class="fas fa-arrow-up text-white sm:text-xl md:text-2xl"></i>
+  </a>
+  
+  <!-- Scroll to Top Script -->
+  <script>
+    // Scroll to top functionality
+    const upArrowButton = document.getElementById('upArrowButton');
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 300) {
+        // Show the up arrow when the user scrolls down
+        upArrowButton.classList.remove('hidden');
+      } else {
+        // Hide the up arrow when the user scrolls back to the top
+        upArrowButton.classList.add('hidden');
+      }
+    });
+  </script>
+  
+  <!-- Footer Section -->
+  <footer class="bg-white dark:bg-[#1F1F1F] pt-10 pb-4">
+    <div class="max-w-6xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-5 gap-8">
+      <div class="space-y-2">
+        <a href="/">
+          <img src="/assets/logo.png" alt="Logo" class="h-8 md:h-12"></a>
+        <div class="space-y-2.5">
+          <p
+            class="flex text-sm sm:text-base items-center text-[#20484F] dark:text-white transition duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+            <i class="fas fa-map-marker-alt mr-2"></i> Ward-06, Makimabad
+          </p>
+          <p
+            class="flex text-sm sm:text-base items-center text-[#20484F] dark:text-white transition duration-300 hover:text-blue-600 dark:hover:text-blue-400 ">
+            <i class="fas fa-building mr-2"></i> Model College Road, Hazigonj
+          </p>
+          <p
+            class="flex text-sm sm:text-base items-center text-[#20484F] dark:text-white transition duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+            <i class="fas fa-city mr-2"></i> Chandpur, Bangladesh
+          </p>
+        </div>
+      </div>
+  
+      <div class="space-y-4">
+        <h3
+          class="font-bold text-red-600 dark:text-red-600 transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+          Home</h3>
+        <ul class="space-y-5">
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-handshake mr-2"></i>Collaborations</a>
+          </li>
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-chart-line mr-2"></i>Statistics</a>
+          </li>
+          <li><a href="/how-it-works.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-cogs mr-2"></i>How
+              It Works</a></li>
+        </ul>
+      </div>
+  
+      <div class="space-y-4">
+        <h3
+          class="font-bold text-red-600 dark:text-red-600 transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+          About Us</h3>
+        <ul class="space-y-5">
+          <li><a href="/who-we-are.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-users mr-2"></i>Who
+              We Are</a></li>
+          <li><a href="/mission-statement.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-bullseye mr-2"></i>Mission
+              statement</a></li>
+          <!-- <li><a href="#"
+                      class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                        class="fas fa-lightbulb mr-2"></i>Our
+                      Vision</a></li> -->
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-user-friends mr-2"></i>The
+              Team</a></li>
+        </ul>
+      </div>
+  
+      <div class="space-y-5">
+        <h3
+          class="font-bold text-red-600 dark:text-red-600 transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+          Upskill</h3>
+        <ul class="space-y-5">
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-laptop-code mr-2"></i>IT
+              Support</a></li>
+          <li><a href="/project-management.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-project-diagram mr-2"></i>Project
+              Management</a></li>
+          <li><a href="/data-analysis.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-chart-pie mr-2"></i>Data
+              Analysts</a></li>
+          <!-- <li><a href="#"
+                      class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                        class="fas fa-paint-brush mr-2"></i>UX
+                      Design</a></li> -->
+        </ul>
+      </div>
+  
+      <div class="space-y-5">
+        <h3 class="font-bold text-red-600 dark:text-red-600 transition-all duration-300">
+          Contact Us</h3>
+        <ul class="space-y-5">
+          <li><a href="/contact-us.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-pen mr-2"></i>Your
+              message</a></li>
+          <!-- <li><a href="/contact-us.html"
+                      class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                        class="fas fa-envelope mr-2"></i>Email</a>
+                  </li> -->
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-phone mr-2"></i>Phone
+              number</a></li>
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fab fa-linkedin mr-2"></i>LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </div>
-
-    <div class="space-y-4">
-      <h3
-        class="font-bold text-red-600 dark:text-red-600 transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
-        Home</h3>
-      <ul class="space-y-5">
-        <li><a href="#"
-            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Collaborations</a>
-        </li>
-        <li><a href="#"
-            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Statistics</a>
-        </li>
-        <li><a href="#"
-            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">How
-            It Works</a></li>
-      </ul>
-    </div>
-
-    <div class="space-y-4">
-      <h3
-        class="font-bold text-red-600 dark:text-red-600 transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
-        About Us</h3>
-      <ul class="space-y-5">
-        <li><a href="/who-we-are.html"
-            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Who
-            We Are</a></li>
-        <li><a href="/mission-statement.html"
-            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Mission
-            statement</a></li>
-        <li><a href="#"
-            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Our
-            Vision</a></li>
-        <li><a href="#"
-            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">The
-            Team</a></li>
-      </ul>
-    </div>
-
-    <div class="space-y-5">
-      <h3
-        class="font-bold text-red-600 dark:text-red-600 transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
-        Upskill</h3>
-      <ul class="space-y-5">
-        <li><a href="#"
-            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">IT
-            Support</a></li>
-        <li><a href="#"
-            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Project
-            Management</a></li>
-        <li><a href="#"
-            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Data
-            Analysts</a></li>
-        <li><a href="#"
-            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">UX
-            Design</a></li>
-      </ul>
-    </div>
-
-    <div class="space-y-5">
-      <h3
-        class="font-bold text-red-600 dark:text-red-600 transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
-        Contact Us</h3>
-      <ul class="space-y-5">
-        <li><a href="#"
-            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Your
-            message</a></li>
-        <li><a href="#"
-            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Email</a>
-        </li>
-        <li><a href="#"
-            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">Phone
-            number</a></li>
-        <li><a href="#"
-            class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">LinkedIn</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Copyright Section -->
-  <div class="pt-4 mt-10 border-t border-gray-300 dark:border-gray-700">
+  
+    <!-- Copyright Section -->
+    <div class="pt-6 mt-4 items-center border-t md:border-t-[1px] border-gray-50 mx-16"></div>
     <p class="text-gray-500 text-center text-sm dark:text-gray-300 transition-all duration-30 ">
       Copyright &copy;
-      <script>document.write(new Date().getFullYear())</script> <a href="/"><b
-          class="dark:hover:text-blue-400">Bangladesh Digital Growth Solutions.</b></a>
+      <script>document.write(new Date().getFullYear())</script> <a href="/"><b class="dark:hover:text-blue-400">Bangladesh
+          Digital Growth Solutions.</b></a>
     </p>
-  </div>
-</footer>
-
-
-
-<!-- some js -->
-<script src="/main.js"></script>
+  
+  </footer>
+  
+  
+  
+  <!-- some js -->
+  <script src="main.js"></script>
   <script>
     // ***darkmode***
     const htmlTag = document.getElementById("htmlTag");
@@ -460,8 +495,32 @@
         }
       });
     });
+
+    // JavaScript to toggle FAQ answers and icons with one open at a time
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const button = item.querySelector('button');
+      const answer = item.querySelector('.faq-answer');
+      const icon = button.querySelector('i.fa-chevron-down');
+
+      button.addEventListener('click', () => {
+        // Close all other open FAQs
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            const otherAnswer = otherItem.querySelector('.faq-answer');
+            const otherIcon = otherItem.querySelector('i.fa-chevron-down');
+            otherAnswer.classList.remove('open');
+            otherIcon.classList.remove('rotate-180');
+          }
+        });
+
+        // Toggle the current FAQ
+        answer.classList.toggle('open');
+        icon.classList.toggle('rotate-180');
+      });
+    });
   </script>
-
-</body>
-
-</html>
+  
+  </body>
+  
+  </html>

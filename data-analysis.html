@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="htmlTag">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon"
+    href="https://cdn3d.iconscout.com/3d/premium/thumb/performance-3d-icon-download-in-png-blend-fbx-gltf-file-formats--analytics-logo-analysis-speed-chart-data-vol-2-pack-business-icons-5231303.png"
+    type="image/x-icon">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://kit.fontawesome.com/004879db08.js" crossorigin="anonymous"></script>
+  <title>Bangladesh Digital Growth Solutions</title>
+  <style>
+    .faq-answer {
+      display: none;
+      transition: all 0.3s ease;
+    }
+
+    .faq-answer.open {
+      display: block;
+      padding: 10px;
+    }
+
+    .faq-item {
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .faq-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .faq-item button {
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    .faq-item button:hover {
+      color: #50edff;
+      /* Custom blue color */
+      text-shadow: 0 0 10px rgba(80, 237, 255, 0.7);
+      /* Glowing effect */
+    }
+  </style>
+
+</head>
+
+<body class="bg-white dark:bg-gray-900">
+  <!-- Header Section -->
+  <header class="md:mx-13 md:py-3 py-2 px-2 sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-lg">
+    <nav class="container mx-auto flex items-center justify-between">
+      <!-- Logo and Branding -->
+      <div class="flex items-center gap-1 md:gap-3">
+        <a href="/"><img src="assets/logo.png" alt="bdgs" class="w-10 md:w-fit"></a>
+        <p class="dark:text-white text-[8px] md:text-xs">
+          Bangladesh Digital Growth Solutions <br>
+          Unlocking your Business Potential
+        </p>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden sm:flex items-center gap-4">
+        <ul class="flex">
+          <li><a href="/" data-path="/"
+              class="nav-item px-3 py-2 text-base font-medium md:text-md text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Home</a>
+          </li>
+          <li><a href="/about-us.html" data-path="/about-us.html"
+              class="nav-item px-3 py-2 text-base font-medium  dark:text-white hover:text-[#F44335] dark:hover:text-orange-500">About
+              Us</a></li>
+          <li><a href="/services.html" data-path="/services.html"
+              class="nav-item px-3 py-2 text-base font-medium md:text-md text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Services</a>
+          </li>
+          <li><a href="/resources.html" data-path="/resources.html"
+              class="nav-item px-3 py-2 text-base font-medium md:text-md text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Resources</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact, Dark Mode -->
+      <div class="flex items-center gap-2 md:gap-7">
+        <a href="#">
+          <button
+            class="bg-[#EA1D22] md:text-base text-xs md:py-2 py-1 md:px-6 px-2 rounded-md text-white font-semibold hover:bg-[#42669e] transition hover:scale-105 hover:translate-y-1">
+            Contact Us
+          </button>
+        </a>
+        <button id="switch" class="relative w-10 h-10 flex items-center justify-center">
+          <svg id="dark-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 absolute transition-transform transform dark:scale-100 scale-0 duration-300 dark:stroke-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 3v2.25m0 13.5V21m8.25-8.25H21M3 12h2.25M5.636 5.636l1.591 1.591M16.773 16.773l1.591 1.591m0-13.182l-1.591 1.591M7.227 16.773l-1.591 1.591M12 8.25A3.75 3.75 0 1 0 15.75 12 3.75 3.75 0 0 0 12 8.25Z" />
+          </svg>
+          <svg id="light-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 absolute transition-transform transform dark:scale-0 scale-100 duration-300">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-toggle" class="sm:hidden flex items-center z-0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 dark:stroke-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 7.5h16.5m-16.5 7.5h16.5" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu"
+        class="hidden fixed top-0 right-0 w-64 h-full bg-white dark:bg-gray-800 shadow-lg z-10 transform translate-x-full transition-transform duration-300">
+        <button id="mobile-menu-close" class="absolute top-4 right-4 text-gray-600 dark:text-gray-300">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <ul id="mobile-menu-items" class="flex flex-col items-start p-6 space-y-4">
+          <li><a href="/" data-path="/"
+              class="nav-item block px-4 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 rounded text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Home</a>
+          </li>
+          <li><a href="/about-us.html" data-path="/about-us.html"
+              class="nav-item block px-4 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 rounded text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">About
+              Us</a></li>
+          <li><a href="/services.html" data-path="/services.html"
+              class="nav-item block px-4 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 rounded text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Services</a>
+          </li>
+          <li><a href="/resources.html" data-path="/resources.html"
+              class="nav-item block px-4 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 rounded text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Resources</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+  <div class="relative font-inter antialiased">
+  
+    <main class="relative min-h-screen flex flex-col justify-center dark:bg-slate-900 overflow-hidden bg-slate-100"><h3 class="text-4xl text-indigo-500 text-center p-4 m-4">Data Analysis</h3>
+      <div class="w-full max-w-6xl pt-0 mx-auto px-4 md:px-6 py-24">
+  
+        <!-- Cards Hover Effect -->
+        <section class="grid md:grid-cols-3 gap-6 max-md:max-w-xs mx-auto">
+          <!-- Card #1 -->
+          <div
+            class="group [background:linear-gradient(theme(colors.slate.900),theme(colors.slate.900))_padding-box,linear-gradient(45deg,theme(colors.slate.800),theme(colors.slate.600/.8),theme(colors.slate.800))_border-box] relative before:absolute before:inset-0 before:bg-[url('./noise.png')] before:bg-[length:352px_382px] rounded-2xl border border-transparent">
+            <div class="relative">
+              <div class="px-6 py-5">
+                <div class="font-nycd text-lg text-indigo-500 mb-1">Label</div>
+                <div class="text-lg font-bold text-slate-200 mb-1">Daily Reports</div>
+                <p class="text-sm text-slate-500">Building truly great products is both art and science. It's part
+                  intuition and part data.</p>
+              </div>
+              <div class="relative group-hover:-translate-y-1 transition-transform duration-500 ease-in-out">
+                <img class="group-hover:opacity-0 transition-opacity duration-500"
+                  src="https://cruip-tutorials.vercel.app/cards-hover-effect//card-01.png" width="350" height="240"
+                  alt="Card image 01">
+                <img class="absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  src="https://cruip-tutorials.vercel.app/cards-hover-effect//card-01-hover.png" width="350" height="240"
+                  alt="Card image 01 displaying on hover" aria-hidden="true">
+              </div>
+            </div>
+          </div>
+          <!-- Card #2 -->
+          <div
+            class="group [background:linear-gradient(theme(colors.slate.900),theme(colors.slate.900))_padding-box,linear-gradient(45deg,theme(colors.slate.800),theme(colors.slate.600/.8),theme(colors.slate.800))_border-box] relative before:absolute before:inset-0 before:bg-[url('./noise.png')] before:bg-[length:352px_382px] rounded-2xl border border-transparent">
+            <div class="relative">
+              <div class="px-6 py-5">
+                <div class="font-nycd text-lg text-indigo-500 mb-1">Label</div>
+                <div class="text-lg font-bold text-slate-200 mb-1">Advanced Security</div>
+                <p class="text-sm text-slate-500">Building truly great products is both art and science. It's part
+                  intuition and part data.</p>
+              </div>
+              <div class="relative group-hover:-translate-y-1 transition-transform duration-500 ease-in-out">
+                <img class="group-hover:opacity-0 transition-opacity duration-500"
+                  src="https://cruip-tutorials.vercel.app/cards-hover-effect//card-02.png" width="350" height="240"
+                  alt="Card image 02">
+                <img class="absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  src="https://cruip-tutorials.vercel.app/cards-hover-effect//card-02-hover.png" width="350" height="240"
+                  alt="Card image 02 displaying on hover" aria-hidden="true">
+              </div>
+            </div>
+          </div>
+          <!-- Card #3 -->
+          <div
+            class="group [background:linear-gradient(theme(colors.slate.900),theme(colors.slate.900))_padding-box,linear-gradient(45deg,theme(colors.slate.800),theme(colors.slate.600/.8),theme(colors.slate.800))_border-box] relative before:absolute before:inset-0 before:bg-[url('./noise.png')] before:bg-[length:352px_382px] rounded-2xl border border-transparent">
+            <div class="relative">
+              <div class="px-6 py-5">
+                <div class="font-nycd text-lg text-indigo-500 mb-1">Label</div>
+                <div class="text-lg font-bold text-slate-200 mb-1">Powerful Analytics</div>
+                <p class="text-sm text-slate-500">Building truly great products is both art and science. It's part
+                  intuition and part data.</p>
+              </div>
+              <div class="relative group-hover:-translate-y-1 transition-transform duration-500 ease-in-out">
+                <img class="group-hover:opacity-0 transition-opacity duration-500"
+                  src="https://cruip-tutorials.vercel.app/cards-hover-effect//card-03.png" width="350" height="240"
+                  alt="Card image 03">
+                <img class="absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  src="https://cruip-tutorials.vercel.app/cards-hover-effect//card-03-hover.png" width="350" height="240"
+                  alt="Card image 03 displaying on hover" aria-hidden="true">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End: Cards Hover Effect -->
+  
+      </div>
+  
+    </main>
+  
+    <!-- Page footer -->
+    <footer class="absolute left-6 right-6 md:left-12 md:right-auto bottom-4 md:bottom-8 text-center md:text-left">
+      <a class="text-xs text-slate-500 hover:underline" href="https://cruip.com">&copy;Nazmul Hasan - Data Analysis System</a>
+    </footer>
+  
+    
+  
+  </div>
+
+
+
+
+  <!-- Up Arrow Button (Floating) -->
+  <a href="/data-analysis.html" id="upArrowButton"
+    class="fixed bottom-6 right-6 bg-indigo-600 text-white p-5 rounded-full shadow-lg hover:bg-green-700 hover:scale-110  transform transition-all duration-300 animate__animated animate__fadeIn animate__delay-3s md:p-6 sm:p-4 sm:w-12 sm:h-12 flex items-center justify-center">
+    <!-- Font Awesome Arrow Icon -->
+    <i class="fas fa-arrow-up text-white sm:text-xl md:text-2xl"></i>
+  </a>
+  
+  <!-- Scroll to Top Script -->
+  <script>
+    // Scroll to top functionality
+    const upArrowButton = document.getElementById('upArrowButton');
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 300) {
+        // Show the up arrow when the user scrolls down
+        upArrowButton.classList.remove('hidden');
+      } else {
+        // Hide the up arrow when the user scrolls back to the top
+        upArrowButton.classList.add('hidden');
+      }
+    });
+  </script>
+  
+  <!-- Footer Section -->
+  <footer class="bg-white dark:bg-[#1F1F1F] pt-10 pb-4">
+    <div class="max-w-6xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-5 gap-8">
+      <div class="space-y-2">
+        <a href="/">
+          <img src="/assets/logo.png" alt="Logo" class="h-8 md:h-12"></a>
+        <div class="space-y-2.5">
+          <p
+            class="flex text-sm sm:text-base items-center text-[#20484F] dark:text-white transition duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+            <i class="fas fa-map-marker-alt mr-2"></i> Ward-06, Makimabad
+          </p>
+          <p
+            class="flex text-sm sm:text-base items-center text-[#20484F] dark:text-white transition duration-300 hover:text-blue-600 dark:hover:text-blue-400 ">
+            <i class="fas fa-building mr-2"></i> Model College Road, Hazigonj
+          </p>
+          <p
+            class="flex text-sm sm:text-base items-center text-[#20484F] dark:text-white transition duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+            <i class="fas fa-city mr-2"></i> Chandpur, Bangladesh
+          </p>
+        </div>
+      </div>
+  
+      <div class="space-y-4">
+        <h3
+          class="font-bold text-red-600 dark:text-red-600 transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+          Home</h3>
+        <ul class="space-y-5">
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-handshake mr-2"></i>Collaborations</a>
+          </li>
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-chart-line mr-2"></i>Statistics</a>
+          </li>
+          <li><a href="/how-it-works.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-cogs mr-2"></i>How
+              It Works</a></li>
+        </ul>
+      </div>
+  
+      <div class="space-y-4">
+        <h3
+          class="font-bold text-red-600 dark:text-red-600 transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+          About Us</h3>
+        <ul class="space-y-5">
+          <li><a href="/who-we-are.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-users mr-2"></i>Who
+              We Are</a></li>
+          <li><a href="/mission-statement.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-bullseye mr-2"></i>Mission
+              statement</a></li>
+          <!-- <li><a href="#"
+                    class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                      class="fas fa-lightbulb mr-2"></i>Our
+                    Vision</a></li> -->
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-user-friends mr-2"></i>The
+              Team</a></li>
+        </ul>
+      </div>
+  
+      <div class="space-y-5">
+        <h3
+          class="font-bold text-red-600 dark:text-red-600 transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400">
+          Upskill</h3>
+        <ul class="space-y-5">
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-laptop-code mr-2"></i>IT
+              Support</a></li>
+          <li><a href="/project-management.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-project-diagram mr-2"></i>Project
+              Management</a></li>
+          <li><a href="/data-analysis.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-chart-pie mr-2"></i>Data
+              Analysts</a></li>
+          <!-- <li><a href="#"
+                    class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                      class="fas fa-paint-brush mr-2"></i>UX
+                    Design</a></li> -->
+        </ul>
+      </div>
+  
+      <div class="space-y-5">
+        <h3 class="font-bold text-red-600 dark:text-red-600 transition-all duration-300">
+          Contact Us</h3>
+        <ul class="space-y-5">
+          <li><a href="/contact-us.html"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-pen mr-2"></i>Your
+              message</a></li>
+          <!-- <li><a href="/contact-us.html"
+                    class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                      class="fas fa-envelope mr-2"></i>Email</a>
+                </li> -->
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fas fa-phone mr-2"></i>Phone
+              number</a></li>
+          <li><a href="#"
+              class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                class="fab fa-linkedin mr-2"></i>LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Copyright Section -->
+    <div class="pt-6 mt-4 items-center border-t md:border-t-[1px] border-gray-50 mx-16"></div>
+    <p class="text-gray-500 text-center text-sm dark:text-gray-300 transition-all duration-30 ">
+      Copyright &copy;
+      <script>document.write(new Date().getFullYear())</script> <a href="/"><b class="dark:hover:text-blue-400">Bangladesh
+          Digital Growth Solutions.</b></a>
+    </p>
+  
+  </footer>
+  
+  
+  
+  <!-- some js -->
+  <script src="main.js"></script>
+  <script>
+    // ***darkmode***
+    const htmlTag = document.getElementById("htmlTag");
+    document.getElementById("switch").addEventListener("click", function () {
+      htmlTag.classList.toggle("dark");
+    });
+
+
+    // ***navmenu/mobilemenu***
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuItems = document.querySelectorAll('#mobile-menu-items a');
+
+    // Open menu
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenu.classList.add('translate-x-0');
+    });
+
+    // Close menu
+    mobileMenuClose.addEventListener('click', closeMenu);
+
+    // Close menu on clicking a menu item
+    menuItems.forEach(item => {
+      item.addEventListener('click', closeMenu);
+    });
+
+    function closeMenu() {
+      mobileMenu.classList.remove('translate-x-0');
+      mobileMenu.classList.add('translate-x-full');
+      setTimeout(() => {
+        mobileMenu.classList.add('hidden');
+      }, 300); // Match duration with transition
+    }
+
+
+    // ***navactivelink***
+    document.addEventListener("DOMContentLoaded", () => {
+      const navItems = document.querySelectorAll(".nav-item");
+
+      // Get the current URL path
+      const currentPath = window.location.pathname;
+
+      // Loop through all nav items and add 'active' class to the matching item
+      navItems.forEach((item) => {
+        if (item.getAttribute("href") === currentPath) {
+          item.classList.add("active");
+        } else {
+          item.classList.remove("active");
+        }
+      });
+    });
+
+    // JavaScript to toggle FAQ answers and icons with one open at a time
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const button = item.querySelector('button');
+      const answer = item.querySelector('.faq-answer');
+      const icon = button.querySelector('i.fa-chevron-down');
+
+      button.addEventListener('click', () => {
+        // Close all other open FAQs
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            const otherAnswer = otherItem.querySelector('.faq-answer');
+            const otherIcon = otherItem.querySelector('i.fa-chevron-down');
+            otherAnswer.classList.remove('open');
+            otherIcon.classList.remove('rotate-180');
+          }
+        });
+
+        // Toggle the current FAQ
+        answer.classList.toggle('open');
+        icon.classList.toggle('rotate-180');
+      });
+    });
+  </script>
+  
+  </body>
+  
+  </html>
