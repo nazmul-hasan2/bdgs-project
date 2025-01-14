@@ -10,6 +10,37 @@
   <link rel="stylesheet" href="main.css">
   <script src="https://kit.fontawesome.com/004879db08.js" crossorigin="anonymous"></script>
   <title>Bangladesh Digital Growth Solutions</title>
+  <style>
+    .faq-answer {
+      display: none;
+      transition: all 0.3s ease;
+    }
+
+    .faq-answer.open {
+      display: block;
+      padding: 10px;
+    }
+
+    .faq-item {
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .faq-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .faq-item button {
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    .faq-item button:hover {
+      color: #50edff;
+      /* Custom blue color */
+      text-shadow: 0 0 10px rgba(80, 237, 255, 0.7);
+      /* Glowing effect */
+    }
+  </style>
+
 </head>
 
 <body class="bg-white dark:bg-gray-900">
@@ -32,7 +63,7 @@
               class="nav-item px-3 py-2 text-base font-medium md:text-md text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Home</a>
           </li>
           <li><a href="/about-us.html" data-path="/about-us.html"
-              class="nav-item px-3 py-2 text-base font-medium md:text-md dark:text-white hover:text-[#F44335] dark:hover:text-orange-500">About
+              class="nav-item px-3 py-2 text-base font-medium  dark:text-white hover:text-[#F44335] dark:hover:text-orange-500">About
               Us</a></li>
           <li><a href="/services.html" data-path="/services.html"
               class="nav-item px-3 py-2 text-base font-medium md:text-md text-black dark:text-white hover:text-[#5677AC] dark:hover:text-orange-500">Services</a>
@@ -45,7 +76,7 @@
 
       <!-- Contact, Dark Mode -->
       <div class="flex items-center gap-2 md:gap-7">
-        <a href="/contact-us.html">
+        <a href="#">
           <button
             class="bg-[#EA1D22] md:text-base text-xs md:py-2 py-1 md:px-6 px-2 rounded-md text-white font-semibold hover:bg-[#42669e] transition hover:scale-105 hover:translate-y-1">
             Contact Us
@@ -101,132 +132,162 @@
       </div>
     </nav>
   </header>
+<!DOCTYPE html>
+<html lang="en">
 
-<main class="bg-gray-50 dark:bg-gray-900 py-20 transition-all duration-300">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Pricing Cards with WhatsApp Integration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-  <!-- Hero Section -->
-  <section class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
-    <div class="text-center md:text-left">
-      <h1 class="text-5xl font-extrabold text-gray-800 dark:text-white mb-4 transition-all duration-300">Innovating Your
-        Digital Growth</h1>
-      <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 transition-all duration-300">We provide transformative
-        digital solutions that accelerate your business into the future.</p>
-      <a href="/services.html"
-        class="bg-indigo-600 text-white py-3 px-6 rounded-lg text-xl font-semibold hover:bg-indigo-700 hover:scale-105 transition-all duration-300 ease-in-out transform flex items-center justify-center gap-2">
-        <i class="fas fa-arrow-right"></i> Explore Our Services
-      </a>
-    </div>
-    <div class=" mt-8 lg:mt-0 w-80 h-80 lg:w-80 lg:h-80">
-      <img src="/assets/whoweare.jpg" alt="Digital Solutions"
-        class="rounded-lg shadow-lg max-w-full transition-transform duration-300 hover:scale-105">
-    </div>
-  </section>
+<body
+  class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen flex flex-col items-center justify-center">
 
-  <!-- About Section -->
-  <section class="container mx-auto px-6 mt-16">
-    <div class="flex flex-col lg:flex-row items-center justify-between">
-      <div class="lg:w-1/2">
-        <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-6 transition-all duration-300">Who We Are</h2>
-        <p class="text-lg text-gray-700 dark:text-gray-300 mb-4 transition-all duration-300">
-          Bangladesh Digital Growth Solutions was founded in 2024 to help businesses in Bangladesh and beyond embrace
-          the power of digital transformation. Our goal is simple: to innovate, solve problems, and create lasting
-          change.
-        </p>
-        <p class="text-lg text-gray-700 dark:text-gray-300 mb-4 transition-all duration-300">
-          We specialize in web development, app design, digital marketing, and data-driven solutions, always tailoring
-          our approach to meet the unique needs of each client.
-        </p>
-        <p class="text-lg text-gray-700 dark:text-gray-300 mb-4 transition-all duration-300">
-          Since our inception in 2024, <span class="font-semibold text-black  dark:text-[#ea1d22]">Bangladesh Digital Growth
-            Solutions</span> has been
-          dedicated to empowering businesses and individuals through cutting-edge digital solutions. Our mission is to
-          revolutionize the digital landscape of Bangladesh by offering innovative, reliable, and scalable services tailored
-          to the needs of our clients.
-        </p>
-        <p class="text-lg text-gray-700 dark:text-gray-300 mb-4 transition-all duration-300">
-          Our team is a vibrant mix of creative thinkers, tech enthusiasts, and problem solvers. We take pride in our
-          diverse skill set, which allows us to tackle challenges from multiple perspectives and deliver exceptional
-          results. Collaboration and innovation are at the heart of everything we do.
-        </p>
-        <p class="text-lg text-gray-700 dark:text-gray-300 mb-4 transition-all duration-300">
-          Creativity is our hallmark. Whether it's designing intuitive user experiences, developing robust software, or
-          crafting impactful marketing campaigns, we approach every project with fresh ideas and a commitment to excellence.
-          Our ability to think outside the box sets us apart in the competitive digital landscape.
-        </p>
-        <p class="text-lg text-gray-700 dark:text-gray-300 mb-4 transition-all duration-300">
-          Specializing in digital transformation, we excel in web development, app design, digital marketing, and
-          data-driven solutions. Our clients trust us to deliver not just services but meaningful partnerships that drive
-          their growth and success.
-        </p>
-      </div>
-      <div class="lg:w-1/2 mt-8 lg:mt-0 w-full  flex justify-center">
-        <img src="https://newherbalzone.in/wp-content/uploads/2022/07/95043-business-deal-success.gif" alt="Teamwork"
-          class="rounded-lg shadow-lg max-w-full transition-transform duration-300 hover:scale-105 w-64 h-64 lg:w-80 lg:h-80">
-      </div>
-    </div>
-  </section>
+  <!-- Header Above Cards (Centered) -->
+  <h2 class="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-8 mt-8 text-center">
+    Website Boost (Single Page)
+  </h2>
 
-  <!-- Team Section -->
-  <section class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 px-6 mt-16">
-    <!-- Founder Card -->
-    <div
-      class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg shadow-xl p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl transform">
-      <img src="assets/ashraf img.jpg" alt="Ashraf Siddiki"
-        class="rounded-full w-32 h-32 mx-auto mb-4 transition-transform duration-300 hover:scale-110">
-      <h3 class="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-2">Ashraf Siddiki</h3>
-      <p class="text-sm font-medium text-gray-500 dark:text-gray-300 mb-4">Founder & CEO</p>
-      <p class="text-gray-700 dark:text-gray-400">
-        Ashraf Siddiki is a visionary leader with a passion for leveraging technology to drive innovation. He founded
-        Bangladesh Digital Growth Solutions to empower businesses in Bangladesh with cutting-edge solutions.
-      </p>
-    </div>
+  <!-- Pricing Cards Section -->
+  <div id="pricing-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-6 max-w-6xl mx-auto">
+    <!-- Cards will be dynamically generated here -->
+  </div>
 
-    <!-- Co-founder Card -->
-    <div
-      class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg shadow-xl p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl transform">
-      <img src="assets/nh4.jpg" alt="Nazmul Hasan"
-        class="rounded-full w-32 h-32 mx-auto mb-4 transition-transform duration-300 hover:scale-110">
-      <h3 class="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-2">Nazmul Hasan</h3>
-      <p class="text-sm font-medium text-gray-500 dark:text-gray-300 mb-4">Co-founder & COO</p>
-      <p class="text-gray-700 dark:text-gray-400">
-        Nazmul Hasan brings years of experience in operations and business management. He works tirelessly to ensure
-        smooth execution of projects, leading the team with efficiency and strategic foresight.
-      </p>
-    </div>
+  <script>
+    // WhatsApp number
+    const whatsappNumber = "1234567890";
 
-    <!-- Another Team Member Card (Optional) -->
-    <!-- <div
-      class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg shadow-xl p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl transform">
-      <img src="https://via.placeholder.com/150" alt="John Doe"
-        class="rounded-full w-32 h-32 mx-auto mb-4 transition-transform duration-300 hover:scale-110">
-      <h3 class="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-2">John Doe</h3>
-      <p class="text-sm font-medium text-gray-500 dark:text-gray-300 mb-4">Chief Technology Officer</p>
-      <p class="text-gray-700 dark:text-gray-400">
-        John leads our technical team and ensures that our solutions are innovative, secure, and scalable. His expertise
-        is crucial to the successful delivery of all our digital projects.
-      </p>
-    </div> -->
-  </section>
+    // Product data
+    const products = [
+      {
+        title: "Website Boost (5 Days)",
+        description: "Quick results with affordable pricing.",
+        priceBDT: "4,000 BDT",
+        priceUSDT: "36.36 USDT",
+      },
+      {
+        title: "Website Boost (15 Days)",
+        description: "Boost your website with advanced SEO strategies.",
+        priceBDT: "9,500 BDT",
+        priceUSDT: "86.36 USDT",
+        badge: "Best Value",
+      },
+      {
+        title: "Website Boost (1 Month)",
+        description: "Perfect for long-term website growth.",
+        priceBDT: "16,000 BDT",
+        priceUSDT: "145.45 USDT",
+      },
+      {
+        title: "Basic SEO Plan (1 Month)",
+        description: "Enhance basic SEO aspects for better search engine visibility.",
+        priceBDT: "8,000 BDT",
+        priceUSDT: "72.72 USDT",
+      },
+      {
+        title: "Premium SEO Plan (3 Months)",
+        description: "All-inclusive SEO strategies for long-term website growth.",
+        priceBDT: "24,000 BDT",
+        priceUSDT: "218.18 USDT",
+        badge: "Limited Offer",
+        gradient: "from-green-400 to-green-600",
+      },
+      {
+        title: "Social Media Marketing (1 Month)",
+        description: "Improve engagement across all social media platforms.",
+        priceBDT: "12,000 BDT",
+        priceUSDT: "109.09 USDT",
+      },
+      {
+        title: "Social Media Marketing (3 Months)",
+        description: "Achieve consistent growth with extended marketing campaigns.",
+        priceBDT: "30,000 BDT",
+        priceUSDT: "272.72 USDT",
+        badge: "Trending",
+      },
+      {
+        title: "Full Website Optimization",
+        description: "Comprehensive optimization for speed and performance.",
+        priceBDT: "18,000 BDT",
+        priceUSDT: "163.63 USDT",
+      },
+      {
+        title: "E-commerce SEO Package (6 Months)",
+        description: "Boost online sales with specialized e-commerce SEO.",
+        priceBDT: "50,000 BDT",
+        priceUSDT: "454.54 USDT",
+        gradient: "from-purple-500 to-purple-700",
+        badge: "Best Seller",
+      },
+      {
+        title: "Custom Digital Marketing Plan",
+        description: "Tailored strategies to suit your business needs.",
+        priceBDT: "Contact for Pricing",
+        priceUSDT: "Custom Quote",
+        gradient: "from-yellow-400 to-orange-500",
+        badge: "Exclusive",
+      },
+    ];
 
-  <!-- Contact Section -->
-  <section class="bg-indigo-600 dark:bg-indigo-800 text-white py-16 mt-20">
-    <div class="container mx-auto text-center px-6">
-      <h2 class="text-3xl font-extrabold mb-6 transition-all duration-300">Ready to Get Started?</h2>
-      <p class="text-lg mb-8 transition-all duration-300">Let’s talk about how we can help transform your business.
-        Reach out to us today!</p>
-      <a href="mailto:contact@bdgs.com"
-        class="bg-yellow-400 text-gray-900 py-3 px-8 rounded-lg text-xl font-semibold hover:bg-yellow-500 hover:scale-105 transition-all duration-300 ease-in-out transform flex items-center justify-center gap-2">
-        <i class="fas fa-envelope"></i> Contact Us
-      </a>
-    </div>
-  </section>
+    // Generate the cards dynamically
+    const cardContainer = document.getElementById("pricing-cards");
 
-</main>
+    products.forEach((product) => {
+      const card = document.createElement("div");
+      const gradientClass = product.gradient
+        ? `bg-gradient-to-r ${product.gradient} text-white`
+        : "bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100";
 
+      card.className = `${gradientClass} border border-gray-200 dark:border-gray-700 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-lg`;
 
+      card.innerHTML = `
+        <div class="relative p-6">
+          ${
+            product.badge
+              ? `<span class="absolute top-4 right-4 bg-yellow-500 text-black text-xs uppercase px-2 py-1 rounded shadow">${product.badge}</span>`
+              : ""
+          }
+          <h2 class="text-xl font-bold mb-4">${product.title}</h2>
+          <p class="mb-4">${product.description}</p>
+          <p class="text-4xl font-bold mb-6">${
+            product.priceBDT === "Contact for Pricing"
+              ? product.priceBDT
+              : `${product.priceBDT} / ${product.priceUSDT}`
+          }</p>
+          <button 
+            class="w-full ${
+              product.gradient
+                ? "bg-white text-green-600"
+                : "border-2 border-blue-600 text-blue-600"
+            } py-2 px-4 text-center rounded transform transition duration-300 ${
+        product.gradient
+          ? "hover:bg-gray-100"
+          : "hover:bg-blue-600 hover:text-white"
+      }" 
+            onclick="redirectToWhatsApp('${product.title}', '${product.priceBDT}', '${product.priceUSDT}')">
+            Choose Plan
+          </button>
+        </div>
+      `;
 
+      cardContainer.appendChild(card);
+    });
 
+    // Redirect to WhatsApp with dynamic product details
+    function redirectToWhatsApp(title, priceBDT, priceUSDT) {
+      const message = `Hello, I am interested in the ${title} plan. Price: ${priceBDT} ${
+        priceBDT === "Contact for Pricing" ? "" : `/ ${priceUSDT}`
+      }. Please provide more details.`;
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+      window.open(whatsappUrl, "_blank");
+    }
+  </script>
+</body>
 
+</html>
 <!--Back To Top-->
 <script>
   configObj = {
@@ -306,6 +367,8 @@
   });
 </script>
 <!--Back To Top-->
+  
+
   
   <!-- Footer Section -->
   <footer class="bg-white dark:bg-[#1F1F1F] pt-10 pb-4">

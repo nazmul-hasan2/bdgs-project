@@ -12,5 +12,51 @@
   }
 }
 
+/* underline svg style */
+/* header svg style */
+@layer components {
+    .underline-animation {
+      @apply relative inline-block;
+    }
+
+    .underline-animation::before,
+    .underline-animation::after {
+      content: "";
+      @apply absolute w-full h-[2.45em] left-0 -z-10;
+      background-image: url('https://res.cloudinary.com/dztuxvl4l/image/upload/v1561346293/unitingline-anim_tje077_hdw2p5.svg');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+
+    .underline-animation::before {
+      @apply top-0;
+    }
+
+    .underline-animation::after {
+      @apply top-0;
+    }
+/* header svg style end */
+
+/* svg underline some item  */
+    .svg-underline {
+      position: relative;
+    }
+
+    .svg-underline::after {
+      content: '';
+      position: absolute;
+      bottom: -0.125rem;
+      left: -0.5rem;
+      right: -0.5rem;
+      height: 0.75rem;
+      z-index: -1;
+      background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    /* svg underline some item end */
+  }
+
 
 
