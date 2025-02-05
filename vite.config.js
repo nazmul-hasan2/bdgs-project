@@ -20,6 +20,7 @@ export default defineConfig({
         da: resolve(__dirname, 'data-analysis.html'),
         cu: resolve(__dirname, 'contact-us.html'),
         thankyou: resolve(__dirname, 'thankyou.html'),
+        statistics: resolve(__dirname, 'statistics.html'),
       },
     },
   },
