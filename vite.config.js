@@ -19,6 +19,7 @@ export default defineConfig({
         hiw: resolve(__dirname, 'how-it-works.html'),
         da: resolve(__dirname, 'data-analysis.html'),
         cu: resolve(__dirname, 'contact-us.html'),
+        thankyou: resolve(__dirname, 'thankyou.html'),
       },
     },
   },

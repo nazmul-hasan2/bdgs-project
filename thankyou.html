@@ -10,6 +10,24 @@
   <link rel="stylesheet" href="main.css">
   <script src="https://kit.fontawesome.com/004879db08.js" crossorigin="anonymous"></script>
   <title>Bangladesh Digital Growth Solutions</title>
+  <style>
+    .float-animation {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+
 </head>
 
 <body class="bg-white dark:bg-gray-900">
@@ -105,169 +123,134 @@
 
 
 
-  <main class="container mx-auto px-4 py-8">
-    <section id="mission" class="text-center py-16 transition-transform duration-500">
-      <h2 class="text-4xl font-extrabold text-gray-800 dark:text-gray-200 mb-6">Our Mission</h2>
-      <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl mx-auto mb-12">
-        At Bangladesh Digital Growth Solutions, we are committed to driving digital transformation and creating
-        sustainable growth opportunities for businesses and individuals in Bangladesh. Our mission encompasses multiple
-        core values and objectives aimed at fostering innovation, education, and collaboration within the digital
-        ecosystem.
-      </p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div
-          class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 transition-transform duration-500 transform hover:scale-105">
-          <i class="fas fa-briefcase text-blue-600 dark:text-blue-400 text-4xl mb-4"></i>
-          <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">Empowering Local Businesses</h3>
-          <p class="text-gray-600 dark:text-gray-400">
-            We aim to provide accessible digital tools and platforms that help small and medium-sized enterprises thrive
-            in a competitive marketplace.
-          </p>
-        </div>
-
-        <div
-          class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 transition-transform duration-500 transform hover:scale-105">
-          <i class="fas fa-chalkboard-teacher text-blue-600 dark:text-blue-400 text-4xl mb-4"></i>
-          <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">Promoting Digital Literacy</h3>
-          <p class="text-gray-600 dark:text-gray-400">
-            Through workshops, training programs, and community outreach, we enhance digital skills and bridge the
-            knowledge gap in underserved communities.
-          </p>
-        </div>
-
-        <div
-          class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 transition-transform duration-500 transform hover:scale-105">
-          <i class="fas fa-lightbulb text-blue-600 dark:text-blue-400 text-4xl mb-4"></i>
-          <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">Driving Innovation</h3>
-          <p class="text-gray-600 dark:text-gray-400">
-            By leveraging cutting-edge technology, we foster a culture of innovation and creativity to address unique
-            challenges and opportunities in Bangladesh.
-          </p>
-        </div>
-
-        <div
-          class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 transition-transform duration-500 transform hover:scale-105">
-          <i class="fas fa-leaf text-blue-600 dark:text-blue-400 text-4xl mb-4"></i>
-          <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">Supporting Sustainable Growth</h3>
-          <p class="text-gray-600 dark:text-gray-400">
-            Our initiatives are designed to ensure long-term economic and environmental sustainability in the digital
-            sector.
-          </p>
-        </div>
-
-        <div
-          class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 transition-transform duration-500 transform hover:scale-105">
-          <i class="fas fa-network-wired text-blue-600 dark:text-blue-400 text-4xl mb-4"></i>
-          <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">Building Collaborative Networks</h3>
-          <p class="text-gray-600 dark:text-gray-400">
-            We connect businesses, educators, and technology leaders to foster partnerships that drive progress and
-            innovation.
-          </p>
-        </div>
-
-        <div
-          class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 transition-transform duration-500 transform hover:scale-105">
-          <i class="fas fa-universal-access text-blue-600 dark:text-blue-400 text-4xl mb-4"></i>
-          <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">Enhancing Accessibility</h3>
-          <p class="text-gray-600 dark:text-gray-400">
-            Ensuring that digital solutions are inclusive and accessible to all, regardless of location, background, or
-            ability.
-          </p>
-        </div>
+<!-- main content -->
+  <div
+    class="bg-white dark:bg-gray-800 p-10 rounded-2xl shadow-lg max-w-md w-full text-center transform transition-all duration-500 hover:shadow-2xl hover:scale-105 mx-auto my-10">
+    <!-- Animated Checkmark Icon -->
+    <div class="flex justify-center">
+      <div class="bg-green-500 p-4 rounded-full shadow-lg animate-bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white"
+          class="w-12 h-12">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
       </div>
-    </section>
-  </main>
+    </div>
 
+    <h1 class="text-4xl font-extrabold text-gray-900 dark:text-yellow-500 mt-6 thank-you">Thank You!</h1>
+    <p class="mt-3 text-lg text-gray-600 dark:text-gray-300">Your submission has been received successfully.</p>
 
+    <div class="mt-6">
+      <a href="/"
+        class="inline-block bg-blue-600 dark:bg-blue-500 text-white px-6 py-3 rounded-lg text-lg shadow-lg transition-all duration-300 transform hover:bg-blue-700 dark:hover:bg-blue-600 hover:scale-110 hover:shadow-xl active:scale-95">
+        Go Back to Home
+      </a>
+    </div>
+  </div>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
-
-<!--Back To Top-->
-<script>
-  configObj = {
-    "buttonD": "M8 18.568L10.8 21.333 16 16.198 21.2 21.333 24 18.568 16 10.667z",
-    "buttonT": "translate(-1148 -172) translate(832 140) translate(32 32) translate(284)",
-    "shadowSize": "0 0 15px 5px rgba(255, 179, 11, 0.6)", // Glow effect
-    "roundnessSize": "12px",
-    "buttonDToBottom": "32px",
-    "buttonDToRight": "32px",
-    "selectedBackgroundColor": "#ffb30b",
-    "selectedIconColor": "#0c151d",
-    "buttonWidth": "40px",
-    "buttonHeight": "40px",
-    "svgWidth": "32px",
-    "svgHeight": "32px"
-  };
-
-  function createButton(obj, pageSimulator) {
-    const body = document.querySelector("body");
-    backToTopButton = document.createElement("span");
-    backToTopButton.classList.add("softr-back-to-top-button");
-    backToTopButton.id = "softr-back-to-top-button";
-    pageSimulator
-      ? pageSimulator.appendChild(backToTopButton)
-      : body.appendChild(backToTopButton);
-    backToTopButton.style.width = obj.buttonWidth;
-    backToTopButton.style.height = obj.buttonHeight;
-    backToTopButton.style.marginRight = obj.buttonDToRight;
-    backToTopButton.style.marginBottom = obj.buttonDToBottom;
-    backToTopButton.style.borderRadius = obj.roundnessSize;
-    backToTopButton.style.boxShadow = obj.shadowSize; // Apply glow effect
-    backToTopButton.style.color = obj.selectedBackgroundColor;
-    backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;
-    pageSimulator
-      ? (backToTopButton.style.position = "absolute")
-      : (backToTopButton.style.position = "fixed");
-    backToTopButton.style.outline = "none";
-    backToTopButton.style.bottom = "0px";
-    backToTopButton.style.right = "0px";
-    backToTopButton.style.cursor = "pointer";
-    backToTopButton.style.textAlign = "center";
-    backToTopButton.style.border = "solid 2px currentColor";
-    backToTopButton.innerHTML =
-      '<svg class="back-to-top-button-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>';
-    backToTopButtonSvg = document.querySelector(".back-to-top-button-svg");
-    backToTopButtonSvg.style.verticalAlign = "middle";
-    backToTopButtonSvg.style.margin = "auto";
-    backToTopButtonSvg.style.justifyContent = "center";
-    backToTopButtonSvg.style.width = obj.svgWidth;
-    backToTopButtonSvg.style.height = obj.svgHeight;
-    backToTopButton.appendChild(backToTopButtonSvg);
-    backToTopButtonImg = document.querySelector(".back-to-top-button-img");
-    backToTopButtonImg.style.fill = obj.selectedIconColor;
-    backToTopButtonSvg.appendChild(backToTopButtonImg);
-    backToTopButtonImg.setAttribute("d", obj.buttonD);
-    backToTopButtonImg.setAttribute("transform", obj.buttonT);
-
-    if (!pageSimulator) {
-      backToTopButton.style.display = "none";
-      window.onscroll = function () {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          backToTopButton.style.display = "block";
-        } else {
-          backToTopButton.style.display = "none";
-        }
-      };
-
-      backToTopButton.onclick = function () {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      };
-    }
+    .thank-you {
+    font-family: 'Kaushan Script', cursive !important;
+    font-size: 4em;
+    letter-spacing: 3px;
+    color: #5892FF;
+    margin: 0 !important;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s forwards ease-out;
   }
+</style>
 
-  document.addEventListener("DOMContentLoaded", function () {
-    createButton(configObj, null);
-  });
-</script>
-<!--Back To Top-->
+
+
+
+
+
+  <!--Back To Top-->
+  <script>
+    configObj = {
+      "buttonD": "M8 18.568L10.8 21.333 16 16.198 21.2 21.333 24 18.568 16 10.667z",
+      "buttonT": "translate(-1148 -172) translate(832 140) translate(32 32) translate(284)",
+      "shadowSize": "0 0 15px 5px rgba(255, 179, 11, 0.6)", // Glow effect
+      "roundnessSize": "12px",
+      "buttonDToBottom": "32px",
+      "buttonDToRight": "32px",
+      "selectedBackgroundColor": "#ffb30b",
+      "selectedIconColor": "#0c151d",
+      "buttonWidth": "40px",
+      "buttonHeight": "40px",
+      "svgWidth": "32px",
+      "svgHeight": "32px"
+    };
+
+    function createButton(obj, pageSimulator) {
+      const body = document.querySelector("body");
+      backToTopButton = document.createElement("span");
+      backToTopButton.classList.add("softr-back-to-top-button");
+      backToTopButton.id = "softr-back-to-top-button";
+      pageSimulator
+        ? pageSimulator.appendChild(backToTopButton)
+        : body.appendChild(backToTopButton);
+      backToTopButton.style.width = obj.buttonWidth;
+      backToTopButton.style.height = obj.buttonHeight;
+      backToTopButton.style.marginRight = obj.buttonDToRight;
+      backToTopButton.style.marginBottom = obj.buttonDToBottom;
+      backToTopButton.style.borderRadius = obj.roundnessSize;
+      backToTopButton.style.boxShadow = obj.shadowSize; // Apply glow effect
+      backToTopButton.style.color = obj.selectedBackgroundColor;
+      backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;
+      pageSimulator
+        ? (backToTopButton.style.position = "absolute")
+        : (backToTopButton.style.position = "fixed");
+      backToTopButton.style.outline = "none";
+      backToTopButton.style.bottom = "0px";
+      backToTopButton.style.right = "0px";
+      backToTopButton.style.cursor = "pointer";
+      backToTopButton.style.textAlign = "center";
+      backToTopButton.style.border = "solid 2px currentColor";
+      backToTopButton.innerHTML =
+        '<svg class="back-to-top-button-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>';
+      backToTopButtonSvg = document.querySelector(".back-to-top-button-svg");
+      backToTopButtonSvg.style.verticalAlign = "middle";
+      backToTopButtonSvg.style.margin = "auto";
+      backToTopButtonSvg.style.justifyContent = "center";
+      backToTopButtonSvg.style.width = obj.svgWidth;
+      backToTopButtonSvg.style.height = obj.svgHeight;
+      backToTopButton.appendChild(backToTopButtonSvg);
+      backToTopButtonImg = document.querySelector(".back-to-top-button-img");
+      backToTopButtonImg.style.fill = obj.selectedIconColor;
+      backToTopButtonSvg.appendChild(backToTopButtonImg);
+      backToTopButtonImg.setAttribute("d", obj.buttonD);
+      backToTopButtonImg.setAttribute("transform", obj.buttonT);
+
+      if (!pageSimulator) {
+        backToTopButton.style.display = "none";
+        window.onscroll = function () {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+          } else {
+            backToTopButton.style.display = "none";
+          }
+        };
+
+        backToTopButton.onclick = function () {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        };
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      createButton(configObj, null);
+    });
+  </script>
+  <!--Back To Top-->
   
   <!-- Footer Section -->
   <footer class="bg-white dark:bg-[#1F1F1F] pt-10 pb-4">
     <div class="max-w-6xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-5 gap-8">
       <div class="space-y-2">
         <a href="/">
-        <img src="/assets/logo.png" alt="Logo" class="h-8 md:h-12"></a>
+          <img src="/assets/logo.png" alt="Logo" class="h-8 md:h-12"></a>
         <div class="space-y-2.5">
           <p
             class="flex text-sm sm:text-base items-center text-[#20484F] dark:text-white transition duration-300 hover:text-blue-600 dark:hover:text-blue-400">
@@ -318,9 +301,9 @@
                 class="fas fa-bullseye mr-2"></i>Mission
               statement</a></li>
           <!-- <li><a href="#"
-                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
-                  class="fas fa-lightbulb mr-2"></i>Our
-                Vision</a></li> -->
+                      class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                        class="fas fa-lightbulb mr-2"></i>Our
+                      Vision</a></li> -->
           <li><a href="#"
               class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
                 class="fas fa-user-friends mr-2"></i>The
@@ -346,9 +329,9 @@
                 class="fas fa-chart-pie mr-2"></i>Data
               Analysts</a></li>
           <!-- <li><a href="#"
-                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
-                  class="fas fa-paint-brush mr-2"></i>UX
-                Design</a></li> -->
+                      class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                        class="fas fa-paint-brush mr-2"></i>UX
+                      Design</a></li> -->
         </ul>
       </div>
   
@@ -361,9 +344,9 @@
                 class="fas fa-pen mr-2"></i>Your
               message</a></li>
           <!-- <li><a href="/contact-us.html"
-                class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
-                  class="fas fa-envelope mr-2"></i>Email</a>
-            </li> -->
+                      class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
+                        class="fas fa-envelope mr-2"></i>Email</a>
+                  </li> -->
           <li><a href="#"
               class="text-[#20484F] dark:text-white transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"><i
                 class="fas fa-phone mr-2"></i>Phone
