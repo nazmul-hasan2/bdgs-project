@@ -1489,6 +1489,145 @@
 
 
 
+<!-- Project demo website  -->
+  <style>
+    /* Popup Styling */
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      padding: 20px;
+    }
+
+    .popup-content {
+      background: rgba(15, 23, 42, 0.7);
+      /* Tailwind bg-slate-950/70 */
+      backdrop-filter: blur(10px) saturate(150%);
+      border: 1px solid rgba(100, 116, 139, 0.5);
+      /* border-slate-500/50 */
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 600px;
+      max-height: 80%;
+      overflow: auto;
+      /* Enable scrolling */
+      text-align: center;
+      position: relative;
+    }
+
+    .close-btn {
+      position: sticky;
+      top: 0;
+      right: 0;
+      background: red;
+      border-radius: 20px;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+      z-index: 10;
+      display: block;
+      margin-left: auto;
+    }
+  </style>
+
+
+  <section class="pt-10 md:pt-16 xl:pt-20 text-center">
+    <h1 class="text-3xl font-bold sm:text-4xl text-white mx-3">Projects that you <span
+        class="bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">build with us</span></h1>
+
+    <div class="my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+      <!-- Project 1 -->
+      <div class="relative bg-gray-800 rounded-lg shadow-lg overflow-hidden group">
+        <img src="/assets/capture.png"
+          class="w-full h-64 object-top object-cover transition-transform duration-300 group-hover:scale-105"
+          alt="Creative For You">
+        <div class="p-4 bg-gray-900 flex justify-between items-center">
+          <h2 class="text-lg font-semibold text-white">Creative For You</h2>
+          <button
+            class="view-btn px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-500 transition">View</button>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="relative bg-gray-800 rounded-lg shadow-lg overflow-hidden group">
+        <img src="/assets/capture (2).png"
+          class="w-full h-64 object-top object-cover transition-transform duration-300 group-hover:scale-105" alt="Ticker Ai">
+        <div class="p-4 bg-gray-900 flex justify-between items-center">
+          <h2 class="text-lg font-semibold text-white">Ticker Ai</h2>
+          <button
+            class="view-btn px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-500 transition">View</button>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="relative bg-gray-800 rounded-lg shadow-lg overflow-hidden group">
+        <img src="/assets/projectimg.png"
+          class="w-full h-64 object-cover object-top transition-transform duration-300 group-hover:scale-105" alt="Mobile App">
+        <div class="p-4 bg-gray-900 flex justify-between items-center">
+          <h2 class="text-lg font-semibold text-white">Creative For You It Support</h2>
+          <button
+            class="view-btn px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-500 transition">View</button>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <!-- <div class="relative bg-gray-800 rounded-lg shadow-lg overflow-hidden group">
+        <img src="/courses/data-science.png"
+          class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" alt="Data Science">
+        <div class="p-4 bg-gray-900 flex justify-between items-center">
+          <h2 class="text-lg font-semibold">Data Science</h2>
+          <button
+            class="view-btn px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-500 transition">View</button>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Popup -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup-content">
+      <button class="close-btn" id="closePopup">X</button>
+      <img src="" id="popupImage" class="w-full rounded-lg" alt="Project Image">
+    </div>
+  </div>
+
+  <script>
+    // Open Popup
+    document.querySelectorAll(".view-btn").forEach(button => {
+      button.addEventListener("click", function () {
+        const imageSrc = this.closest(".relative").querySelector("img").src;
+        document.getElementById("popupImage").src = imageSrc;
+        document.getElementById("popup").style.display = "flex";
+      });
+    });
+
+    // Close Popup
+    document.getElementById("closePopup").addEventListener("click", function () {
+      document.getElementById("popup").style.display = "none";
+    });
+
+    // Close Popup when clicking outside
+    document.getElementById("popup").addEventListener("click", function (event) {
+      if (event.target === this) {
+        document.getElementById("popup").style.display = "none";
+      }
+    });
+  </script>
+<!-- project demo website end -->
+  
+
+
 <!-- pricing card -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-6 max-w-6xl mx-auto py-16">
   <!-- Card 1 -->
